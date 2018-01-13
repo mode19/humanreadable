@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Manage your News Feeds with Newsbeuter and DigitalOcean"
-date: 2018-01-09
-categories: rss,digitalocean
+date: 2017-11-14
+categories: rss,DigitalOcean
 ---
 
 ## Introduction
@@ -12,12 +12,14 @@ In this age of big data and machine learning, we are increasingly becoming comfo
 <a href="https://en.wikipedia.org/wiki/RSS">RSS (Really Simple Sindication)</a> and <a href="https://en.wikipedia.org/wiki/Atom">Atom</a> are types of web feeds that allow content publishers such as websites, blogs, podcasts etc to announce to the world when new items are available. News readers are software programs that can read these syndication formats from a bunch of websites and present the results to the user much like an e-mail program.
 
 There are many news reading tools available. This tutorial introduces you to <a href="https://newsbeuter.org/">Newsbeuter</a>, a unix based console program.
-Why Newsbeuter? It has the following features which we will consider:
+Why Newsbeuter?
 
-* Since it runs in a text based terminal it is remotely and securely accessible from anywhere by ssh
-* The text based nature of the program eliminates some distracting images and ads
-* It allows for tagging and filtering content to facilitate organizing your feeds
-* It supports Query Feeds - grouping of categories into a single feed
+* Simple text-based interface
+* Remotely and Securely accessible (through ssh)
+* No distracting images and ads
+* Tagging and filtering content)
+* Query Feeds - (simplifies content into single feeds)
+* Opensource license [github: akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter/blob/master/LICENSE)
 
 We will walk through the process of installing and configuring Newsbeuter and by the end of the tutorial you should have an understanding of each of these features and how they can help you take back control of your news feeds.
 
@@ -25,9 +27,8 @@ We will walk through the process of installing and configuring Newsbeuter and by
 
 To perform the steps in this guide, you will need the following:
 
-
-* Basic Unix knowledge, copying files, running commands etc.
-* A Ubuntu server install such as one from Digital Ocean because they have great tutorials such as <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">How to setup a Ubuntu server</a>
+* Comfortable using a Unix command line
+* A Ubuntu server install such as one from DigitalOcean because they have great tutorials such as <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">How to setup a Ubuntu server</a>
 
 ### Step 1: Installing Newsbeuter
 Lets begin! At the <a href="https://newsbeuter.org/doc/newsbeuter.html#_installation">Newsbeuter website</a> you will find detailed instructions for installing and configuring the software. Luckily, Ubuntu rocks, and often has a package ready for us to use, so the easiest way to get started is often to log into your server and search the package manager for Newsbeuter by entering the following commmand:
@@ -88,15 +89,15 @@ http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml "~BBC N
 #technology 
 https://news.ycombinator.com/rss "~HN" news, noisy
  
-#digital ocean stuff 
-https://status.digitalocean.com/history.rss "~Digital Ocean-status" important
+#DigitalOcean stuff 
+https://status.digitalocean.com/history.rss "~DigitalOcean-status" important
 https://status.heroku.com/feed "~Heroku status" important
 
 #random feeds 
 http://feeds.feedburner.com/OpenCulture "~OpenCulture Blog" blog
 http://joeroganexp.joerogan.libsynpro.com/rss "~Joe Rogan Podcast" podcast
 http://www.nba.com/raptors/rss.xml "~Raptors Schedule" blog noisy
-https://www.youtube.com/feeds/videos.xml?user=DigitalOceanVideos "~Digital Ocean Videos - youtube" blog
+https://www.youtube.com/feeds/videos.xml?user=DigitalOceanVideos "~DigitalOcean Videos - youtube" blog
 
 #health
 http://nutritionfacts.org/feed "~Nutrition Facts" blog
@@ -231,7 +232,7 @@ We took a trip back in time to text-based software and browsers, we learned abou
 * Blogs
 * News aggregators (just make sure to make filters for these noisy sources)
 * Forum thread comment sections
-* Digital Ocean status page
+* DigitalOcean status page
 * Youtube channels (ok, so its hard to view youtube videos in w3m, but maybe someone will write a script for this eventually)
 * Google news
 * Job search sites
