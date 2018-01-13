@@ -17,7 +17,7 @@ title: HumanReadable blog
 email: humanreadable@example.com
 description: >- # this means to ignore newlines until "baseurl:"
     Compters, Linux, Open-source, Programming, Technology related articles
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/humanreadable" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
