@@ -74,10 +74,10 @@ usage: newsbeuter [-i <file>|-e] [-u <urlfile>] [-c <cachefile>] [-x <command></
         -h              this help
 ```
 
-The error message above explains exactly why Newsbeuter was unable to start, and then prints out the usage message. As we can see, we haven't added any URLs yet for Newsbeuter to read. There are two ways we can do that.
+The error message above explains exactly why Newsbeuter was unable to start, and then prints out the usage message. As we can see, we haven't added any web links or <a href="https://en.wikipedia.org/wiki/URL">URLs</a> for Newsbeuter to read. There are two ways we can do that.
 
 * We can update the 'urls' file
-* We can import the <a href="https://en.wikipedia.org/wiki/OPML">OPML</a> file. If you previously used another RSS reader, you can try to export your URLs from that program into an OPML file. In that case, you can import the into newsbeuter using the -i option.
+* We can import the <a href="https://en.wikipedia.org/wiki/OPML">OPML</a> file. If you previously used another RSS reader we could try to export the data from that program into an OPML file. In that case you can import it into Newsbeuter using the -i option.
 
 Lets assume we are starting from scratch and we are going to update the 'urls' file:
 
@@ -103,11 +103,11 @@ https://www.youtube.com/feeds/videos.xml?user=DigitalOceanVideos "~DigitalOcean 
 http://nutritionfacts.org/feed "~Nutrition Facts" blog
 ```
 
-Copy the text above into the `~/newsbeuter/urls` file. Once we have saved the file we try to run newsbeuter again. Now we can see our feeds:
+Copy the text above into the `~/newsbeuter/urls` file. Once we have saved the file we can try to run newsbeuter again. Now we can see our feeds:
 
 ![Newsbeuter initial screenshot](https://2.bp.blogspot.com/-6tI0ammr0Xk/WgoZwLs6Q0I/AAAAAAAAAAo/W7733oOUPTQhEGObdcqGkFOC7pz3UsjxwCEwYBhgL/s1600/newsbeuter_after_initial_refresh.png "Newsbeuter Initial Screenshot")
 
-To get started just press 'R' to reload all feeds. This will go through each URL and fetch the articles for each one, in this case thousands of unread articles will appear, so if you're feeling overwhelmed, just press 'C' to catch up and mark everything as read.  Typically you press 'R' to reload all your feeds to see if any new items have arrived. Press '?" to get a full list of commands
+To get started just press 'R' to reload all feeds. This will go through each URL and fetch its content. In this case thousands of unread articles will appear so if you're feeling overwhelmed just press 'C' to catch up and mark everything as read.  Typically you press 'R' to reload all your feeds to see if any new items have arrived. Press '?" to get a full list of commands
 
 Newsbeuter starts off in the Feeds List View and is structured as follows:
 
@@ -118,16 +118,16 @@ Feed List View
             Open in Browser
 ```
 
-Press "ENTER" inside a feed opens the list of articles, and pressing enter on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
+Press 'ENTER' inside a feed opens the list of articles and pressing 'ENTER' on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
 
 ### Configure Newsbeuter with your own settings
-Now we're up and running, we can jump into Newsbeuter whenever we feel the need to get up to date information (or to procrastinate by reading a celebrity gossip feed, which I'm sure you're not interested in but just in case here is the link: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). 
+Now we're up and running. We can jump into Newsbeuter whenever we feel the need to get up to date information (or we may be looking to procrastinate by reading a celebrity gossip feed; which I'm sure you're not interested in but just in case here is the URL: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). 
 
-Simply start the program, and press 'R' repeatedly until a new news item appears. If pressing 'R' is too much effort, we can use the auto-reload feature to periodically refresh the news item.
+Simply start Newsbeuter and press 'R' repeatedly until a new item appears. If pressing 'R' is too much effort we can use the auto-reload feature to periodically refresh the news item for us.
 
 The configuration settings such as auto-reload are well documented in the newsbeuter user manual, just reference the <a href="https://www.newsbeuter.org/doc/newsbeuter.html#_first_steps">First Steps</a> section. 
 
-Here is a quick sample of a config file
+Here is an example of a working a configuration file.
 
 `~/.newsbeuter/config:`
 
@@ -172,18 +172,18 @@ bind-key O open-in-browser-and-mark-read
 ```
 
 ### Viewing Articles
-To view an article, simply press ENTER to open the article, and then press 'o' to open it in the browser. Since most of the content is text based, we can use the default w3m text based browser to read it. However, if you're on a desktop system with Chrome or Firefox available you can just as <a href="https://newsbeuter.org/doc/newsbeuter.html#_first_steps">easily configure Newsbeuter</a> to open that. 
+To view an article, simply press 'ENTER' to open the article, and then press 'o' to open it in the browser. Since most of the content is text based, we can use the default w3m text based browser to read it. However, if you're on a desktop system with Chrome or Firefox available you can just as <a href="https://newsbeuter.org/doc/newsbeuter.html#_first_steps">easily configure Newsbeuter</a> to open that. 
 
 Since the default browser is w3m here is a quick summary of the keys needed to navigate this browser:
 
 ```
 'q' - quit
-space - down a page
-'b' - up a page
+'space' - page down
+'b' - page up
 'H' - help screen
 ```
 
-If you want to stay with a text based browser consider using <a href="http://elinks.or.cz/">elinks</a>. It seems to do a decent job of rendering modern web pages for basic readability, and is also available on Ubuntu.
+If you want to stick with a text based browser consider using <a href="http://elinks.or.cz/">elinks</a>. It does a good job of rendering modern web pages for basic readability and is also available on Ubuntu.
 
 ### Tags - Categorize your Feeds
 Tags are useful for organizing your feeds. You will notice in the urls file above that we can put a list of space seperated tags after the feed name. These tags can then be used to group feeds and articles.
@@ -195,7 +195,7 @@ For example, to view only items tagged with 'important', press 't' and then sele
 ### Filters - Focus on what is Important
 Filters can remove unwanted entries from your current view. There are two types of filters, feed filters and article filters.
 
-For example, to filter out feeds that do not contain any unread items, we can press 'F', then enter the following filter text, followed by ENTER:
+For example: to filter out feeds that do not contain any unread items, we can press 'F', then enter the following filter text, followed by 'ENTER':
 
 ```
 unread_count > 0
@@ -213,33 +213,32 @@ define-filter "Feeds with unread messages" "unread_count > 0"
 For complete details on creating filter expressions see the <a href="https://newsbeuter.org/doc/newsbeuter.html#_filter_language">detailed documentation here</a>.
 
 ### Simplying Views with Query Feeds and Grouping
-Query feeds are a powerful tool that make Newsbeuter stand out as a news reader. They give the user the ability to combine a set of distinct feeds into a single feed. Once your URL list starts to grow bigger you will see why this is very useful, instead of checking all the entertainment feeds separately to see what updates were received for today, we can open a single feed called entertainment and see them all together in a single feed. Lets work through a simple example.
+Query feeds are a powerful tool that make Newsbeuter stand out as a news reader. They give the user the ability to combine a set of distinct feeds into a single feed. Once your URL list starts to grow bigger you will see why this is very useful. Instead of checking all the entertainment related feeds separately to see what updates were received for today we can open a single feed called entertainment and see them all together in a single view. Lets work through a simple example to illustrate.
 
-Add the following to line to the top of the urls file and restart Newsbeuter
+Add the following line to the top of the urls file and restart Newsbeuter.
 
 `~/.newsbeuter/urls:`
 ```
 "query:Entertainment Stuff:tags # \"blog\" or tags # \"podcast\""
 ```
 
-The above statement is creating a new feed called "Entertainment Stuff" which groups together everything with blog or podcast tags. You can see now that when we open "Entertainment Stuff" all the applicable articles are grouped together in one list:
+The above statement creates a new feed called "Entertainment Stuff" which groups together everything with blog or podcast tags. You can see in the screenshot below that when we open "Entertainment Stuff" all the applicable articles are grouped together in one list:
 
 ![Newsbeuter tags screenshot](https://4.bp.blogspot.com/-yNcFOXpm3n4/WgodkHe-DOI/AAAAAAAAABA/zGtt1jMOnLsyW9XZ9J4CCJXECy5GYqd-wCLcBGAs/s1600/newsbeuter_query_feed_example.png "Newsbeuter Tags Screenshot")
 
 You can write and combine filter expression as needed, see the <a href="https://newsbeuter.org/doc/newsbeuter.html#_filter_language">filter language documentation page</a> to learn more.
 
 ### Conclusion and Next Steps
-We took a trip back in time to text-based software and browsers, we learned about why RSS is an important technology and how to use Newsbeuter to start managing our own news feeds. There are still plenty of sites that use RSS and Atom.  Here are some ideas on what you can include in your RSS feeds:
+We took a trip back in time to the age of text-based software and browsers. We learned about RSS and how to use Newsbeuter to start managing our own news feeds. There are still plenty of sites that use RSS and Atom.  Here are some ideas on what you can include in your feeds:
 
 * Blogs
-* News aggregators (just make sure to make filters for these noisy sources)
+* News aggregators i.e slashdot.org (just make sure to make filters for these noisy sources)
 * Forum thread comment sections
 * DigitalOcean status page
-* Youtube channels (ok, so its hard to view youtube videos in w3m, but maybe someone will write a script for this eventually)
-* Google news
-* Job search sites
+* Youtube channels (ok, so its hard to view youtube videos in w3m but you will be notified of new updates)
+* News sites
 * Websites like reddit, monster.com, craigslist etc etc
 
-In addition, Newsbeuter has many advanced features to potentially further improve your news reading workflow. For example, <a href="https://newsbeuter.org/doc/newsbeuter.html#_macro_support">Newsbeuter macros</a> allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter's functionality using <a href="https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions">scripts</a> which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.
+In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, <a href="https://newsbeuter.org/doc/newsbeuter.html#_macro_support">Newsbeuter macros</a> allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter's functionality using <a href="https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions">scripts</a> which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.
 
 
