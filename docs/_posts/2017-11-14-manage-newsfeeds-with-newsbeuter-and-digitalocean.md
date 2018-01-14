@@ -121,9 +121,11 @@ Feed List View
 Press "ENTER" inside a feed opens the list of articles, and pressing enter on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
 
 ### Configure Newsbeuter with your own settings
-Now we're up and running, we can jump into Newsbeuter whenever we feel the need to get up to date information (or to procrastinate by reading a celebrity hooks-ups feed, which I'm sure you're not interested in but just in case here is the link: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). Simply start the program, and press 'R' repeatedly until a new news item appears. Lets configure it to be a bit more customized. For example, as you can see in the config file below, if pressing 'R' is too much effort, there is an auto-reload feature that can periodically refresh the news item.
+Now we're up and running, we can jump into Newsbeuter whenever we feel the need to get up to date information (or to procrastinate by reading a celebrity gossip feed, which I'm sure you're not interested in but just in case here is the link: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). 
 
-The configuration settings are well documented in the newsbeuter user manual, just reference the <a href="https://www.newsbeuter.org/doc/newsbeuter.html#_first_steps">First Steps</a> section. 
+Simply start the program, and press 'R' repeatedly until a new news item appears. If pressing 'R' is too much effort, we can use the auto-reload feature to periodically refresh the news item.
+
+The configuration settings such as auto-reload are well documented in the newsbeuter user manual, just reference the <a href="https://www.newsbeuter.org/doc/newsbeuter.html#_first_steps">First Steps</a> section. 
 
 Here is a quick sample of a config file
 

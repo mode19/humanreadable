@@ -5,13 +5,17 @@ date:   2018-01-09
 categories: vim
 ---
 
-For vim users, one of the most useful commmands to know is the global command.
+For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.
 
 To see the formal help page enter the following into vim:
 
     help :g
 
-One useful example is to delete lines from a file matching a pattern.  For example:
+The example below looks specifically at the delete (or 'd') command, but there are many others that can be used.  To see more commands enter:
+
+    help ex-cmd-index
+
+A common use is to delete lines from a file matching a pattern.  For example:
 
 If we wanted to remove all the lines containing 'grapefruit' from the following file:
 
