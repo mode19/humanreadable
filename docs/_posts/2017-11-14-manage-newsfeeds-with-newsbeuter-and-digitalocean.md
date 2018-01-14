@@ -8,7 +8,7 @@ categories: rss,DigitalOcean
 ## Introduction
 In this age of big data and machine learning, we are increasingly becoming comfortable with the idea of being told what to read. It seems like Youtube knows exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also mean an endless stream of ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box store. The difficutly with the market place is that you're navigating it on your own. How do you keep track of which stalls have new items to see? When you're looking for food, how do you apply filters and see only food stalls? This is where the idea of <a href="https://en.wikipedia.org/wiki/Web_feed">Web Feeds</a> and news reader software comes in, it can help you organize your information, and save you time.
 
-### What are RRS, Atom and Newsbeuter?
+### What are RSS, Atom and Newsbeuter?
 <a href="https://en.wikipedia.org/wiki/RSS">RSS (Really Simple Sindication)</a> and <a href="https://en.wikipedia.org/wiki/Atom">Atom</a> are types of web feeds that allow content publishers such as websites, blogs, podcasts etc to announce to the world when new items are available. News readers are software programs that can read these syndication formats from a bunch of websites and present the results to the user much like an e-mail program.
 
 There are many news reading tools available. This tutorial introduces you to <a href="https://newsbeuter.org/">Newsbeuter</a>, a unix based console program.
