@@ -17,7 +17,7 @@ Why Newsbeuter?
 * Simple text-based interface
 * Remotely and Securely accessible (through ssh)
 * No distracting images and ads
-* Tagging and filtering content)
+* Tagging and filtering content
 * Query Feeds - (simplifies content into single feeds)
 * Opensource license [github: akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter/blob/master/LICENSE)
 
