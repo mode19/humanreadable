@@ -5,7 +5,7 @@ date:   2018-01-09
 categories: javascript
 ---
 
-A look at using [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to format and indent JavaScript objects.
+A quick way to convert a JavaScript object to a formatted and indented string is to use the [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) function.
 
 
 For example, take the following JavaScript object:
@@ -20,13 +20,13 @@ var json = {
 };
 {% endhighlight %}
 
-formatted with the line of code:
+Pass it to the stringify function with the following parameters:
 
 {% highlight javascript %}
 var str = JSON.stringify( json, null, 4);
 {% endhighlight %}
 
-The end result is a string that is nicely formatted and readable:
+The end result is a string that is indented and formatted as a JSON string:
 
 ```
 {
