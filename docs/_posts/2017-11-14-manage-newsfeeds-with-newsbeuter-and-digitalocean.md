@@ -6,12 +6,12 @@ categories: rss,DigitalOcean
 ---
 
 ## Introduction
-In this modern age we have unprecedented access to information through the internet.  The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like Youtube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use <a href="https://en.wikipedia.org/wiki/Web_feed">Web Feeds</a> and news reader software in order to organize your information and save you time.
+In this modern age we have unprecedented access to information through the internet.  The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use <a href="https://en.wikipedia.org/wiki/Web_feed">Web Feeds</a> and news reader software in order to organize your information and save you time.
 
 ### What are RSS, Atom and Newsbeuter?
-<a href="https://en.wikipedia.org/wiki/RSS">RSS (Really Simple Sindication)</a> and <a href="https://en.wikipedia.org/wiki/Atom">Atom</a> are types of web feeds that allow content publishers such as websites, blogs, podcasts etc to announce to the world when new items are available. News readers are software programs that can read these syndication formats from a bunch of websites and present the results to the user much like an e-mail program.
+<a href="https://en.wikipedia.org/wiki/RSS">RSS (Really Simple Syndication)</a> and <a href="https://en.wikipedia.org/wiki/Atom">Atom</a> are types of web feeds that allow content publishers such as websites, blogs, podcasts etc to announce to the world when new items are available. News readers are software programs that can read these syndication formats from a bunch of websites and present the results to the user much like an e-mail program.
 
-There are many news reading tools <a href="https://en.wikipedia.org/wiki/News_aggregator">available</a>. This tutorial introduces you to <a href="https://newsbeuter.org/">Newsbeuter</a>, a unix based console program.
+There are many news reading tools <a href="https://en.wikipedia.org/wiki/News_aggregator">available</a>. This tutorial introduces you to <a href="https://newsbeuter.org/">Newsbeuter</a>, a UNIX based console program.
 Why Newsbeuter?
 
 * Simple text-based interface
@@ -19,7 +19,7 @@ Why Newsbeuter?
 * No distracting images and ads
 * Tagging and filtering content
 * Query Feeds - (simplifies content into single feeds)
-* Opensource license [github: akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter/blob/master/LICENSE)
+* Open-source license [github: akrennmair/newsbeuter](https://github.com/akrennmair/newsbeuter/blob/master/LICENSE)
 
 We will walk through the process of installing and configuring Newsbeuter and by the end of the tutorial you should have an understanding of each of these features and how they can help you take back control of your news feeds.
 
@@ -31,7 +31,7 @@ To perform the steps in this guide, you will need the following:
 * A Ubuntu server install such as one from DigitalOcean because they have great tutorials such as <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">How to setup a Ubuntu server</a>
 
 ### Step 1: Installing Newsbeuter
-Lets begin! At the <a href="https://newsbeuter.org/doc/newsbeuter.html#_installation">Newsbeuter website</a> you will find detailed instructions for installing and configuring the software. Luckily, Ubuntu rocks, and often has a package ready for us to use, so the easiest way to get started is often to log into your server and search the package manager for Newsbeuter by entering the following commmand:
+Lets begin! At the <a href="https://newsbeuter.org/doc/newsbeuter.html#_installation">Newsbeuter website</a> you will find detailed instructions for installing and configuring the software. Luckily, Ubuntu rocks, and often has a package ready for us to use, so the easiest way to get started is often to log into your server and search the package manager for Newsbeuter by entering the following command:
 
 ```
 $ apt-cache search newsbeuter
@@ -186,11 +186,11 @@ Since the default browser is w3m here is a quick summary of the keys needed to n
 If you want to stick with a text based browser consider using <a href="http://elinks.or.cz/">elinks</a>. It does a good job of rendering modern web pages for basic readability and is also available on Ubuntu.
 
 ### Tags - Categorize your Feeds
-Tags are useful for organizing your feeds. You will notice in the urls file above that we can put a list of space seperated tags after the feed name. These tags can then be used to group feeds and articles.
+Tags are useful for organizing your feeds. You will notice in the urls file above that we can put a list of space separated tags after the feed name. These tags can then be used to group feeds and articles.
 
 For example, to view only items tagged with 'important', press 't' and then select the 'important' the tag. Press CTRL-t to clear the tag filter.
 
-![Newsbeuter tags screenshot](https://3.bp.blogspot.com/-2WXHqISou58/Wgob2npq2BI/AAAAAAAAAA4/bhVyVcCAjh0-pOd1At4UpOTURFpyOhJEACEwYBhgL/s1600/newsbeuter_tag_importantonly.png "Newsbeuter Tags Screenshot")
+![Newsbeuter tags screenshot](https://3.bp.blogspot.com/-2WXHqISou58/Wgob2npq2BI/AAAAAAAAAA4/bhVyVcCAjh0-pOd1At4UpOTURFpyOhJEACEwYBhgL/s1600/newsbeuter_tag_importantonly.png "Newsbeuter Tags Screen-shot")
 
 ### Filters - Focus on what is Important
 Filters can remove unwanted entries from your current view. There are two types of filters, feed filters and article filters.
@@ -212,7 +212,7 @@ define-filter "Feeds with unread messages" "unread_count > 0"
 
 For complete details on creating filter expressions see the <a href="https://newsbeuter.org/doc/newsbeuter.html#_filter_language">detailed documentation here</a>.
 
-### Simplying Views with Query Feeds and Grouping
+### Simplifying Views with Query Feeds and Grouping
 Query feeds are a powerful tool that make Newsbeuter stand out as a news reader. They give the user the ability to combine a set of distinct feeds into a single feed. Once your URL list starts to grow bigger you will see why this is very useful. Instead of checking all the entertainment related feeds separately to see what updates were received for today we can open a single feed called entertainment and see them all together in a single view. Lets work through a simple example to illustrate.
 
 Add the following line to the top of the urls file and restart Newsbeuter.
@@ -222,9 +222,9 @@ Add the following line to the top of the urls file and restart Newsbeuter.
 "query:Entertainment Stuff:tags # \"blog\" or tags # \"podcast\""
 ```
 
-The above statement creates a new feed called "Entertainment Stuff" which groups together everything with blog or podcast tags. You can see in the screenshot below that when we open "Entertainment Stuff" all the applicable articles are grouped together in one list:
+The above statement creates a new feed called "Entertainment Stuff" which groups together everything with blog or podcast tags. You can see in the screen-shot below that when we open "Entertainment Stuff" all the applicable articles are grouped together in one list:
 
-![Newsbeuter tags screenshot](https://4.bp.blogspot.com/-yNcFOXpm3n4/WgodkHe-DOI/AAAAAAAAABA/zGtt1jMOnLsyW9XZ9J4CCJXECy5GYqd-wCLcBGAs/s1600/newsbeuter_query_feed_example.png "Newsbeuter Tags Screenshot")
+![Newsbeuter tags screenshot](https://4.bp.blogspot.com/-yNcFOXpm3n4/WgodkHe-DOI/AAAAAAAAABA/zGtt1jMOnLsyW9XZ9J4CCJXECy5GYqd-wCLcBGAs/s1600/newsbeuter_query_feed_example.png "Newsbeuter Tags Screen-shot")
 
 You can write and combine filter expression as needed, see the <a href="https://newsbeuter.org/doc/newsbeuter.html#_filter_language">filter language documentation page</a> to learn more.
 
@@ -235,7 +235,7 @@ We took a trip back in time to the age of text-based software and browsers. We l
 * News aggregators i.e slashdot.org (just make sure to make filters for these noisy sources)
 * Forum thread comment sections
 * DigitalOcean status page
-* Youtube channels (ok, so its hard to view youtube videos in w3m but you will be notified of new updates)
+* YouTube channels (ok, so its hard to view youtube videos in w3m but you will be notified of new updates)
 * News sites
 * Websites like reddit, monster.com, craigslist etc etc
 
