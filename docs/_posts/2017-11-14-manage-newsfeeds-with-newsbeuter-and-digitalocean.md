@@ -27,7 +27,7 @@ We will walk through the process of installing and configuring Newsbeuter and by
 
 To perform the steps in this guide, you will need the following:
 
-* Comfortable using a Unix command line
+* Ability to use the Unix command line to issue commands and create as well as edit files
 * A Ubuntu server install such as one from DigitalOcean because they have great tutorials such as <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">How to setup a Ubuntu server</a>
 
 ### Step 1: Installing Newsbeuter
@@ -107,7 +107,7 @@ Copy the text above into the `~/newsbeuter/urls` file. Once we have saved the fi
 
 ![Newsbeuter initial screenshot](https://2.bp.blogspot.com/-6tI0ammr0Xk/WgoZwLs6Q0I/AAAAAAAAAAo/W7733oOUPTQhEGObdcqGkFOC7pz3UsjxwCEwYBhgL/s1600/newsbeuter_after_initial_refresh.png "Newsbeuter Initial Screenshot")
 
-To get started just press 'R' to reload all feeds. This will go through each URL and fetch its content. In this case thousands of unread articles will appear so if you're feeling overwhelmed just press 'C' to catch up and mark everything as read.  Typically you press 'R' to reload all your feeds to see if any new items have arrived. Press '?" to get a full list of commands
+Welcome to the main screen of Newsbeuter, the layout consists of three main sections.  A title bar, a list of content and at the bottom is a menu bar summarizing commands currently available.  In this case the content list contains the six feeds we added to the urls file. To get started just press <kb>R</kb> to reload all feeds. This will go through each URL and fetch its content. In this case thousands of unread articles will appear so if you're feeling overwhelmed just press <kb>C</kb> to catch up and mark everything as read.  Typically you press <kb>R</kb> to reload all your feeds to see if any new items have arrived. Press <kb>?</kb> to get a full list of commands
 
 Newsbeuter starts off in the Feeds List View and is structured as follows:
 
@@ -118,12 +118,12 @@ Feed List View
             Open in Browser
 ```
 
-Press 'ENTER' inside a feed opens the list of articles and pressing 'ENTER' on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
+Press <kb>Enter</kb> inside a feed opens the list of articles and pressing <kb>ENTER</kb> on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
 
 ### Configure Newsbeuter with your own settings
 Now we're up and running. We can jump into Newsbeuter whenever we feel the need to get up to date information (or we may be looking to procrastinate by reading a celebrity gossip feed; which I'm sure you're not interested in but just in case here is the URL: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). 
 
-Simply start Newsbeuter and press 'R' repeatedly until a new item appears. If pressing 'R' is too much effort we can use the auto-reload feature to periodically refresh the news item for us.
+Simply start Newsbeuter and press <kb>R</kb> repeatedly until a new item appears. If pressing <kb>R</kb> is too much effort we can use the auto-reload feature to periodically refresh the news item for us.
 
 The configuration settings such as auto-reload are well documented in the newsbeuter user manual, just reference the <a href="https://www.newsbeuter.org/doc/newsbeuter.html#_first_steps">First Steps</a> section. 
 
@@ -172,35 +172,38 @@ bind-key O open-in-browser-and-mark-read
 ```
 
 ### Viewing Articles
-To view an article, simply press 'ENTER' to open the article, and then press 'o' to open it in the browser. Since most of the content is text based, we can use the default w3m text based browser to read it. However, if you're on a desktop system with Chrome or Firefox available you can just as <a href="https://newsbeuter.org/doc/newsbeuter.html#_first_steps">easily configure Newsbeuter</a> to open that. 
+To view an article, simply press <kb>Enter</kb> to open the article, and then press <kb>o</kb> to open it in the browser. Since most of the content is text based, we can use the default w3m text based browser to read it. However, if you're on a desktop system with Chrome or Firefox available you can just as <a href="https://newsbeuter.org/doc/newsbeuter.html#_first_steps">easily configure Newsbeuter</a> to open that. 
 
 Since the default browser is w3m here is a quick summary of the keys needed to navigate this browser:
 
-```
-'q' - quit
-'space' - page down
-'b' - page up
-'H' - help screen
-```
+|Key | Command Description
+|---
+|:----:|:---
+| <kb>q</kb>        | quit 
+| <kb>space</kb>    | page down
+| <kb>b</kb>        | page up
+| <kb>H</kb>        | help screen
+|===
 
-If you want to stick with a text based browser consider using <a href="http://elinks.or.cz/">elinks</a>. It does a good job of rendering modern web pages for basic readability and is also available on Ubuntu.
+<br/>
+If you want to stick with using a text based browser consider using <a href="http://elinks.or.cz/">elinks</a>. It does a good job of rendering modern web pages for basic readability and is also available on Ubuntu.
 
 ### Tags - Categorize your Feeds
 Tags are useful for organizing your feeds. You will notice in the urls file above that we can put a list of space separated tags after the feed name. These tags can then be used to group feeds and articles.
 
-For example, to view only items tagged with 'important', press 't' and then select the 'important' the tag. Press CTRL-t to clear the tag filter.
+For example, to view only items tagged with 'important', press <kb>t</kb> and then select the 'important' the tag. Press <kb>Ctrl</kb>+<kb>t</kb> to clear the tag filter.
 
 ![Newsbeuter tags screenshot](https://3.bp.blogspot.com/-2WXHqISou58/Wgob2npq2BI/AAAAAAAAAA4/bhVyVcCAjh0-pOd1At4UpOTURFpyOhJEACEwYBhgL/s1600/newsbeuter_tag_importantonly.png "Newsbeuter Tags Screen-shot")
 
 ### Filters - Focus on what is Important
 Filters can remove unwanted entries from your current view. There are two types of filters, feed filters and article filters.
 
-For example: to filter out feeds that do not contain any unread items, we can press 'F', then enter the following filter text, followed by 'ENTER':
+For example: to filter out feeds that do not contain any unread items, we can press <kb>F</kb>, then enter the following filter text, followed by <kb>Enter</kb>:
 
 ```
 unread_count > 0
 ```
-Press CTRL-F to clear the filter and view everything again.
+Press <kb>CTRL</kb>+<kb>F</kb> to clear the filter and view everything again.
 
 Filters can be predefined in the configuration file by adding them to the config file, for example add:
 

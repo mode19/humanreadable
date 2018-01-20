@@ -24,9 +24,12 @@ github_username:  mode19
 # Build settings
 markdown: kramdown
 theme: minima
+safe : false
 plugins:
   - jekyll-feed
 
+jgraphs:
+      dirname: /assets/images/
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
