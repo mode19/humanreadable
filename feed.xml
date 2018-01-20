@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-20T14:28:43-05:00</updated><id>http://localhost:4000/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">A quick and useful VIM tip: the global command</title><link href="http://localhost:4000/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="A quick and useful VIM tip: the global command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>http://localhost:4000/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="http://localhost:4000/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-20T16:44:31-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">A quick and useful VIM tip: the global command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="A quick and useful VIM tip: the global command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
 
 &lt;p&gt;To see the formal help page enter the following into vim:&lt;/p&gt;
 
@@ -50,7 +50,7 @@ grapefruit3
 grapefruit4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Using more complex patterns can make this command invaluable when cleaning up data files.&lt;/p&gt;</content><author><name></name></author><summary type="html">For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.</summary></entry><entry><title type="html">A quick tip to format JSON objects in JavaScript</title><link href="http://localhost:4000/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html" rel="alternate" type="text/html" title="A quick tip to format JSON objects in JavaScript" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>http://localhost:4000/humanreadable/javascript/2018/01/09/javascript-JSON-formatting</id><content type="html" xml:base="http://localhost:4000/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">&lt;p&gt;A quick way to convert a JavaScript object to a formatted and indented string is to use the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&quot;&gt;JSON.stringify&lt;/a&gt; function.&lt;/p&gt;
+&lt;p&gt;Using more complex patterns can make this command invaluable when cleaning up data files.&lt;/p&gt;</content><author><name></name></author><summary type="html">For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.</summary></entry><entry><title type="html">A quick tip to format JSON objects in JavaScript</title><link href="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html" rel="alternate" type="text/html" title="A quick tip to format JSON objects in JavaScript" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting</id><content type="html" xml:base="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">&lt;p&gt;A quick way to convert a JavaScript object to a formatted and indented string is to use the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&quot;&gt;JSON.stringify&lt;/a&gt; function.&lt;/p&gt;
 
 &lt;p&gt;For example, take the following JavaScript object:&lt;/p&gt;
 
@@ -79,7 +79,7 @@ grapefruit4
         }
     ]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">A quick way to convert a JavaScript object to a formatted and indented string is to use the JSON.stringify function.</summary></entry><entry><title type="html">Manage your News Feeds with Newsbeuter and DigitalOcean</title><link href="http://localhost:4000/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html" rel="alternate" type="text/html" title="Manage your News Feeds with Newsbeuter and DigitalOcean" /><published>2017-11-14T00:00:00-05:00</published><updated>2017-11-14T00:00:00-05:00</updated><id>http://localhost:4000/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean</id><content type="html" xml:base="http://localhost:4000/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">A quick way to convert a JavaScript object to a formatted and indented string is to use the JSON.stringify function.</summary></entry><entry><title type="html">Manage your News Feeds with Newsbeuter and DigitalOcean</title><link href="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html" rel="alternate" type="text/html" title="Manage your News Feeds with Newsbeuter and DigitalOcean" /><published>2017-11-14T00:00:00-05:00</published><updated>2017-11-14T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean</id><content type="html" xml:base="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In this modern age we have unprecedented access to information through the internet.  The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_feed&quot;&gt;Web Feeds&lt;/a&gt; and news reader software in order to organize your information and save you time.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-are-rss-atom-and-newsbeuter&quot;&gt;What are RSS, Atom and Newsbeuter?&lt;/h3&gt;
@@ -333,24 +333,119 @@ define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt;
   &lt;li&gt;Websites like reddit, monster.com, craigslist etc etc&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry><entry><title type="html">Welcome to the blog</title><link href="http://localhost:4000/humanreadable/admin/2017/01/01/welcome.html" rel="alternate" type="text/html" title="Welcome to the blog" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>http://localhost:4000/humanreadable/admin/2017/01/01/welcome</id><content type="html" xml:base="http://localhost:4000/humanreadable/admin/2017/01/01/welcome.html">&lt;p&gt;Welcome to the HumanReadable blog. On these pages I hope to provide interesting insights into the world of computers.&lt;/p&gt;
+&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry><entry><title type="html">Welcome to the blog</title><link href="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html" rel="alternate" type="text/html" title="Welcome to the blog" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/admin/2017/01/01/welcome</id><content type="html" xml:base="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html">&lt;p&gt;I believe it was Albert Einstein that said: “If you’re not learning you’re dying”.  Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.&lt;/p&gt;
 
 &lt;p&gt;As a software developer I am constantly exploring new technologies and tinkering with a wide variety of tools. This blog is intended to share some of those ideas and learnings.&lt;/p&gt;
 
 &lt;p&gt;Some ideas for topics I may tackle in the future:&lt;/p&gt;
 
+&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;586pt&quot; height=&quot;166pt&quot; viewBox=&quot;0.00 0.00 586.02 165.62&quot;&gt;
+&lt;g id=&quot;graph0&quot; class=&quot;graph&quot; transform=&quot;scale(1 1) rotate(0) translate(4 161.622)&quot;&gt;
+&lt;title&gt;ideas&lt;/title&gt;
+&lt;polygon fill=&quot;white&quot; stroke=&quot;none&quot; points=&quot;-4,4 -4,-161.622 582.016,-161.622 582.016,4 -4,4&quot;&gt;&lt;/polygon&gt;
+
+&lt;g id=&quot;node1&quot; class=&quot;node&quot;&gt;&lt;title&gt;Ideas&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;276.033&quot; cy=&quot;-127.217&quot; rx=&quot;45.9239&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;262.033&quot; y=&quot;-123.017&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Ideas&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;node2&quot; class=&quot;node&quot;&gt;&lt;title&gt;Design&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;53.033&quot; cy=&quot;-30.4056&quot; rx=&quot;53.066&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;34.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Design&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;edge1&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Design&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M236.732,-110.975C203.971,-98.0974 156.182,-78.9099 115.033,-60.8112 110.872,-58.981 106.574,-57.0432 102.273,-55.0704&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;103.446,-51.7565 92.9013,-50.7241 100.5,-58.1068 103.446,-51.7565&quot;&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;node3&quot; class=&quot;node&quot;&gt;&lt;title&gt;Code&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;170.033&quot; cy=&quot;-30.4056&quot; rx=&quot;45.9239&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;156.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Code&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;edge2&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Code&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M249.285,-102.292C235.727,-90.165 219.102,-75.2954 204.587,-62.3122&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;206.56,-59.3808 196.773,-55.3228 201.893,-64.5983 206.56,-59.3808&quot;&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;node4&quot; class=&quot;node&quot;&gt;&lt;title&gt;Test&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;276.033&quot; cy=&quot;-30.4056&quot; rx=&quot;42.3529&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;264.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Test&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;edge3&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Test&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M276.033,-96.7376C276.033,-88.6219 276.033,-79.6842 276.033,-71.0939&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;279.533,-70.8665 276.033,-60.8665 272.533,-70.8665 279.533,-70.8665&quot;&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;node5&quot; class=&quot;node&quot;&gt;&lt;title&gt;Deploy&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;390.033&quot; cy=&quot;-30.4056&quot; rx=&quot;53.9813&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;370.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Deploy&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;edge4&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Deploy&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M303.921,-103.023C318.515,-90.8855 336.59,-75.8528 352.406,-62.6987&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;354.991,-65.1018 360.441,-56.0165 350.515,-59.7199 354.991,-65.1018&quot;&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;node6&quot; class=&quot;node&quot;&gt;&lt;title&gt;Monitor&lt;/title&gt;
+&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;520.033&quot; cy=&quot;-30.4056&quot; rx=&quot;57.9655&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;497.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Monitor&lt;/text&gt;
+&lt;/g&gt;
+
+&lt;g id=&quot;edge5&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Monitor&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M316.011,-112.212C352.056,-99.4038 406.404,-79.6394 453.033,-60.8112 457.77,-58.8983 462.673,-56.8607 467.572,-54.7847&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;469.131,-57.9244 476.944,-50.768 466.373,-51.4904 469.131,-57.9244&quot;&gt;&lt;/polygon&gt;
+&lt;/g&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Implementing CICD (Continuous Integration and Continuous Deployment) pipeline using Jenkins&lt;/li&gt;
-  &lt;li&gt;Automated web-ui testing with selenium API using Java&lt;/li&gt;
-  &lt;li&gt;Load testing with Java and jmeter on DigitalOcean&lt;/li&gt;
-  &lt;li&gt;Webdriver.io using Selenium with Node.js&lt;/li&gt;
-  &lt;li&gt;Load testing with Python and locust.io on DigitalOcean&lt;/li&gt;
-  &lt;li&gt;Automated testing of JSON APIs using Rest-Assured&lt;/li&gt;
-  &lt;li&gt;Memory Monitoring java applications on Linux&lt;/li&gt;
-  &lt;li&gt;Linux performance monitoring&lt;/li&gt;
-  &lt;li&gt;Introduction to running Hyper-SQL database server&lt;/li&gt;
+  &lt;li&gt;Design
+    &lt;ul&gt;
+      &lt;li&gt;UML for developers overview&lt;/li&gt;
+      &lt;li&gt;Generating UML diagrams from code&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Code
+    &lt;ul&gt;
+      &lt;li&gt;Using Jetty Servlet Container: Embedded v.s Stand-alone&lt;/li&gt;
+      &lt;li&gt;Eclipse Che project - coding in the cloud; is it ready?&lt;/li&gt;
+      &lt;li&gt;Using VIM as a Node.js/JavaScript IDE&lt;/li&gt;
+      &lt;li&gt;JSON Schema for validating JSON objects&lt;/li&gt;
+      &lt;li&gt;Introduction to Json Path&lt;/li&gt;
+      &lt;li&gt;XSLT and Xpath Basics&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Test
+    &lt;ul&gt;
+      &lt;li&gt;Automated web application testing with Selenium API using Java&lt;/li&gt;
+      &lt;li&gt;Load testing with Java and Jmeter on DigitalOcean&lt;/li&gt;
+      &lt;li&gt;Webdriver.io using Selenium with Node.js&lt;/li&gt;
+      &lt;li&gt;Load testing with Python and locust.io on DigitalOcean&lt;/li&gt;
+      &lt;li&gt;Automated testing of JSON APIs using Rest-Assured&lt;/li&gt;
+      &lt;li&gt;Using wiremock to record and playback test data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deploy
+    &lt;ul&gt;
+      &lt;li&gt;Introduction to running Hyper-SQL database server&lt;/li&gt;
+      &lt;li&gt;Implementing CICD (Continuous Integration and Continuous Deployment) pipeline using Jenkins&lt;/li&gt;
+      &lt;li&gt;Introduction to Docker&lt;/li&gt;
+      &lt;li&gt;MongoDB Basics&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Monitor
+    &lt;ul&gt;
+      &lt;li&gt;Memory Monitoring java applications on Linux&lt;/li&gt;
+      &lt;li&gt;Linux performance monitoring&lt;/li&gt;
+      &lt;li&gt;Monitor Java JVM memory and runtime with JMX and jconsole&lt;/li&gt;
+      &lt;li&gt;Creating performance graphs on the command-line using gnuplot&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I hope to provide concise, useful and interesting articles on these and other topics.&lt;/p&gt;
 
-&lt;p&gt;Please check back soon for more articles!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome to the HumanReadable blog. On these pages I hope to provide interesting insights into the world of computers.</summary></entry></feed>
+&lt;p&gt;Welcome to the blog and please check back soon for more articles!&lt;/p&gt;</content><author><name></name></author><summary type="html">I believe it was Albert Einstein that said: “If you’re not learning you’re dying”. Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.</summary></entry></feed>
