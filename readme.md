@@ -18,3 +18,6 @@ URL: https://github.com/jekyll/minima
 URL: https://rubygems.org/pages/download
 URL: http://localhost:4000/humanreadable/
 URL: http://mode19.github.io/humanreadable/
+
+## Notes/credits
+https://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/
