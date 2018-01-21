@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-21T13:39:39-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-21T13:49:42-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
 
 &lt;p&gt;To see the formal help page enter the following into vim:&lt;/p&gt;
 
@@ -404,44 +404,44 @@ define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt;
 &lt;ul&gt;
   &lt;li&gt;Design
     &lt;ul&gt;
-      &lt;li&gt;UML for developers overview&lt;/li&gt;
-      &lt;li&gt;Generating UML diagrams from code&lt;/li&gt;
+      &lt;li&gt;Introductio to UML Diagrams&lt;/li&gt;
+      &lt;li&gt;Generating UML diagrams from Code&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Code
     &lt;ul&gt;
       &lt;li&gt;Using Jetty Servlet Container: Embedded v.s Stand-alone&lt;/li&gt;
-      &lt;li&gt;Eclipse Che project - coding in the cloud; is it ready?&lt;/li&gt;
+      &lt;li&gt;Eclipse Che project - Coding in the Cloud&lt;/li&gt;
       &lt;li&gt;Using VIM as a Node.js/JavaScript IDE&lt;/li&gt;
-      &lt;li&gt;JSON Schema for validating JSON objects&lt;/li&gt;
+      &lt;li&gt;Maintaining Data Integrity with JSON Schema&lt;/li&gt;
       &lt;li&gt;Introduction to Json Path&lt;/li&gt;
-      &lt;li&gt;XSLT and Xpath Basics&lt;/li&gt;
+      &lt;li&gt;The Zen of XML Transformations: XSLT and Xpath Basics&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Test
     &lt;ul&gt;
-      &lt;li&gt;Automated web application testing with Selenium API using Java&lt;/li&gt;
-      &lt;li&gt;Load testing with Java and Jmeter on DigitalOcean&lt;/li&gt;
-      &lt;li&gt;Webdriver.io using Selenium with Node.js&lt;/li&gt;
+      &lt;li&gt;Automated Web Interface Testing with Selenium Java API&lt;/li&gt;
+      &lt;li&gt;Load testing with Jmeter on DigitalOcean&lt;/li&gt;
+      &lt;li&gt;Using Selenium with Node.js: Webdriver.io Project&lt;/li&gt;
       &lt;li&gt;Load testing with Python and locust.io on DigitalOcean&lt;/li&gt;
-      &lt;li&gt;Automated testing of JSON APIs using Rest-Assured&lt;/li&gt;
-      &lt;li&gt;Using wiremock to record and playback test data&lt;/li&gt;
+      &lt;li&gt;Automated Testing of JSON Web Services using Rest-Assured&lt;/li&gt;
+      &lt;li&gt;Recording and Playing-back Data: Introduction to Wiremock Server&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Deploy
     &lt;ul&gt;
-      &lt;li&gt;Introduction to running Hyper-SQL database server&lt;/li&gt;
-      &lt;li&gt;Implementing CICD (Continuous Integration and Continuous Deployment) pipeline using Jenkins&lt;/li&gt;
+      &lt;li&gt;Introduction to Running Hyper-SQL Database Server&lt;/li&gt;
+      &lt;li&gt;Implementing CICD (Continuous Integration and Continuous Deployment)&lt;/li&gt;
+      &lt;li&gt;Generating Test Reports using Jenkins&lt;/li&gt;
       &lt;li&gt;Introduction to Docker&lt;/li&gt;
       &lt;li&gt;MongoDB Basics&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Monitor
     &lt;ul&gt;
-      &lt;li&gt;Memory Monitoring java applications on Linux&lt;/li&gt;
-      &lt;li&gt;Linux performance monitoring&lt;/li&gt;
-      &lt;li&gt;Monitor Java JVM memory and runtime with JMX and jconsole&lt;/li&gt;
-      &lt;li&gt;Creating performance graphs on the command-line using gnuplot&lt;/li&gt;
+      &lt;li&gt;Linux Performance Monitoring&lt;/li&gt;
+      &lt;li&gt;Monitor Java JVM Memory with JMX and Jconsole&lt;/li&gt;
+      &lt;li&gt;Creating Graphs on the Command-line using Gnuplot&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
