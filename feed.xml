@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-21T13:17:12-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-01-21T13:29:26-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00-05:00</published><updated>2018-01-09T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
 
 &lt;p&gt;To see the formal help page enter the following into vim:&lt;/p&gt;
 
@@ -339,67 +339,7 @@ define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt;
 
 &lt;p&gt;Some ideas for topics I may tackle in the future:&lt;/p&gt;
 
-&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;586pt&quot; height=&quot;166pt&quot; viewBox=&quot;0.00 0.00 586.02 165.62&quot;&gt;
-&lt;g id=&quot;graph0&quot; class=&quot;graph&quot; transform=&quot;scale(1 1) rotate(0) translate(4 161.622)&quot;&gt;
-&lt;title&gt;ideas&lt;/title&gt;
-&lt;polygon fill=&quot;white&quot; stroke=&quot;none&quot; points=&quot;-4,4 -4,-161.622 582.016,-161.622 582.016,4 -4,4&quot;&gt;&lt;/polygon&gt;
-
-&lt;g id=&quot;node1&quot; class=&quot;node&quot;&gt;&lt;title&gt;Ideas&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;276.033&quot; cy=&quot;-127.217&quot; rx=&quot;45.9239&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;262.033&quot; y=&quot;-123.017&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Ideas&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node2&quot; class=&quot;node&quot;&gt;&lt;title&gt;Design&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;53.033&quot; cy=&quot;-30.4056&quot; rx=&quot;53.066&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;34.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Design&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge1&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Design&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M236.732,-110.975C203.971,-98.0974 156.182,-78.9099 115.033,-60.8112 110.872,-58.981 106.574,-57.0432 102.273,-55.0704&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;103.446,-51.7565 92.9013,-50.7241 100.5,-58.1068 103.446,-51.7565&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node3&quot; class=&quot;node&quot;&gt;&lt;title&gt;Code&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;170.033&quot; cy=&quot;-30.4056&quot; rx=&quot;45.9239&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;156.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Code&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge2&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Code&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M249.285,-102.292C235.727,-90.165 219.102,-75.2954 204.587,-62.3122&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;206.56,-59.3808 196.773,-55.3228 201.893,-64.5983 206.56,-59.3808&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node4&quot; class=&quot;node&quot;&gt;&lt;title&gt;Test&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;276.033&quot; cy=&quot;-30.4056&quot; rx=&quot;42.3529&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;264.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Test&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge3&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Test&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M276.033,-96.7376C276.033,-88.6219 276.033,-79.6842 276.033,-71.0939&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;279.533,-70.8665 276.033,-60.8665 272.533,-70.8665 279.533,-70.8665&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node5&quot; class=&quot;node&quot;&gt;&lt;title&gt;Deploy&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;390.033&quot; cy=&quot;-30.4056&quot; rx=&quot;53.9813&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;370.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Deploy&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge4&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Deploy&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M303.921,-103.023C318.515,-90.8855 336.59,-75.8528 352.406,-62.6987&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;354.991,-65.1018 360.441,-56.0165 350.515,-59.7199 354.991,-65.1018&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node6&quot; class=&quot;node&quot;&gt;&lt;title&gt;Monitor&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;black&quot; cx=&quot;520.033&quot; cy=&quot;-30.4056&quot; rx=&quot;57.9655&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;497.033&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Monitor&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge5&quot; class=&quot;edge&quot;&gt;&lt;title&gt;Ideas-&amp;gt;Monitor&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M316.011,-112.212C352.056,-99.4038 406.404,-79.6394 453.033,-60.8112 457.77,-58.8983 462.673,-56.8607 467.572,-54.7847&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;469.131,-57.9244 476.944,-50.768 466.373,-51.4904 469.131,-57.9244&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-&lt;/g&gt;
-&lt;/svg&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/graphs-a3e147c93a5db06c481de45a4bac5c034d39f88d.svg&quot; alt=&quot;ideas&quot; title=&quot;ideas&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Design

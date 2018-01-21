@@ -514,7 +514,7 @@ kb {
   background-image: url("/humanreadable/assets/images/airbg.jpg");
   background-size: 100%; }
 
-.graph {
+svg {
   width: 100%; }
 
 .site-footer {
