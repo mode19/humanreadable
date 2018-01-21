@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>JavaScript Quick Tip: Stringifying an Object with Indentation</title>
-  <meta name="description" content="In JavaScript the JSON.stringifyStringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebr...">
+  <meta name="description" content="In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and ...">
 
   <link rel="stylesheet" href="/humanreadable/assets/main.css">
   <link rel="canonical" href="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">
@@ -80,7 +80,7 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>In JavaScript the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify</a>Stringify method provides a way of converting a JavaScript object to a string.  This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshootin.</p>
+    <p>In JavaScript the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify</a> method provides a way of converting a JavaScript object to a string.  This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshootin.</p>
 
 <p>For example, take the following JavaScript object:</p>
 
@@ -96,7 +96,7 @@
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">obj</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span></code></pre></figure>
 
-<p>The end result is a string that is indented and formatted as a JSON string:</p>
+<p>The end result is a string that is indented and formatted as a readable string:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "test": 1,
