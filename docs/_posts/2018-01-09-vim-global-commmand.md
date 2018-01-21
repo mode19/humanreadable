@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A quick and useful VIM tip: the global command"
+title:  "VIM Quick Tip: The Global Command"
 date:   2018-01-09
 categories: vim
 ---

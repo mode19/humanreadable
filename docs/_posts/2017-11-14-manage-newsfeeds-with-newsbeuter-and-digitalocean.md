@@ -118,7 +118,7 @@ Feed List View
             Open in Browser
 ```
 
-Press <kb>Enter</kb> inside a feed opens the list of articles and pressing <kb>ENTER</kb> on article opens the article details etc. In all cases 'q' takes you back to the previous screen.
+Press <kb>Enter</kb> inside a feed opens the list of articles and pressing <kb>Enter</kb> on article opens the article details etc. In all cases <kb>q<kb> takes you back to the previous screen.
 
 ### Configure Newsbeuter with your own settings
 Now we're up and running. We can jump into Newsbeuter whenever we feel the need to get up to date information (or we may be looking to procrastinate by reading a celebrity gossip feed; which I'm sure you're not interested in but just in case here is the URL: <i>http://www.tmz.com/category/hook-ups/rss.xml</i>). 
@@ -203,7 +203,7 @@ For example: to filter out feeds that do not contain any unread items, we can pr
 ```
 unread_count > 0
 ```
-Press <kb>CTRL</kb>+<kb>F</kb> to clear the filter and view everything again.
+Press <kb>Ctrl</kb>+<kb>F</kb> to clear the filter and view everything again.
 
 Filters can be predefined in the configuration file by adding them to the config file, for example add:
 

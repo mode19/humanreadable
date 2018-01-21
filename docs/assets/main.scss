@@ -45,3 +45,17 @@ text-shadow:0 1px 0 #fff;
 line-height:1.4;
 white-space:nowrap;
 }
+
+.site-header {
+      background-image: url('{{ site.baseurl }}/assets/images/airbg.jpg');
+      background-size: 100%;
+}
+
+.graph {
+    width: 100%
+}
+
+.site-footer {
+      background-image: url('{{ site.baseurl }}/assets/images/airbg.jpg');
+      background-size: 100%;
+}
