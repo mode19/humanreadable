@@ -85,6 +85,10 @@ sort -n | awk '
 '
 ```
 
+Don't forget to assign executable permission to the script:
+
+    chmod +x ~/bin/calc.sh
+
 ## The BEGIN Section
   The first block of the program called 'BEGIN' is a special section that gets executed before any records are processed. In this case we use the begin block to initialize two variables to 0 and to print out a header line to standard output.
 
