@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quick and Dirty Software Metrics using Awk</title>
+  <meta name="description" content="Introduction When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together ...">
+
+  <link rel="stylesheet" href="/humanreadable/assets/main.css">
+  <link rel="canonical" href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">
+  <link rel="alternate" type="application/rss+xml" title="HumanReadable Blog" href="/humanreadable/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/humanreadable/">HumanReadable Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/humanreadable/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Quick and Dirty Software Metrics using Awk</h1>
+    <p class="post-meta">
+      <time datetime="2018-03-01T00:00:00-05:00" itemprop="datePublished">
+        
+        Mar 1, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="introduction">Introduction</h2>
+<p>When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together data from different sources and using only command-line access. The UNIX command line has lots of great text processing utilities such as cat, tail, grep, awk etc, however, numerical analysis can be challenging on the command-line.
+  In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>Basic familiarity with UNIX command line such as cat, tail, grep etc</li>
+</ul>
+
+<h2 id="given-a-list-of-numbers-what-are-the-average-minimum-and-maximum-values">Given a List of Numbers what are the Average, Minimum and Maximum values?</h2>
+
+<p>Given the following file numbers.txt. How do we quickly calculate the average or maximum value?</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat numbers.txt
+22
+12.1
+11
+12
+3434
+29343
+138
+392
+19342
+23991
+19923
+23
+9144
+</code></pre></div></div>
+<p>We can <a href="https://en.wikipedia.org/wiki/Cat_(Unix)">cat</a> the file to standard output and pipe the data into our calc.sh script as follows:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat numbers.txt | ~/bin/calc.sh 
+sum     count   avg     median  min     max
+105787  13      8137.47 392     11      29343
+</code></pre></div></div>
+
+<p>Lets look at how to create our own calc.sh script using the UNIX text processing utility awk.</p>
+
+<h2 id="what-is-awk">What is awk</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/AWK">Awk</a> is command-line text processor that can be used to quickly process text input. An awk program works by parsing an input file into records and each record is broken down into fields. By default, records are delimited by new line characters and fields are demarcated by any white-space characters. However, records and fields can be controlled by the awk RS (record-separator) and FS (field-separator) variables. By default the separators are character types, but can also be regular expressions.</p>
+
+<p>Once the data is parsed into records and fields and awk program consists of condition-command pairs that are applied to each input record. If the condition is true for that record then the command is executed. The program is over when all the records have been processed making it ideal for filtering or counting of events.</p>
+
+<p>In addition to processing for each record a BEGIN and END section are executed unconditionally before and after processing of the records.</p>
+
+<p>Lets dive right into our program to see an example.</p>
+
+<h2 id="using-awk-to-measure-average-minimum-maximum-and-medium-times">Using awk to measure Average, Minimum, Maximum and Medium times</h2>
+
+<p>Copy the following awk script into your ~/bin/calc.sh file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># This bash script expects to be fed a line-separated list of numbers and will print out the sum/count/average/medium/min/max encountered.</span>
+<span class="c"># based on a script from: https://unix.stackexchange.com/questions/13731/is-there-a-way-to-get-the-min-max-median-and-average-of-a-list-of-numbers-in</span>
+
+<span class="nb">sort</span> <span class="nt">-n</span> | <span class="nb">awk</span> <span class="s1">'
+  BEGIN {
+    c = 0;
+    sum = 0;
+    OFS="\t";
+    print "sum","count", "average", "medium", "min", "max"
+  }
+  $1 ~ /^[0-9]*(\.[0-9]*)?$/ {
+    a[c++] = $1;
+    sum += $1;
+  }
+  END {
+    ave = sum / c;
+    if( (c % 2) == 1 ) {
+      median = a[ int(c/2) ];
+    } else {
+      median = ( a[c/2] + a[c/2-1] ) / 2;
+    }
+    print sum, c, ave, median, a[0], a[c-1];
+}
+'</span>
+</code></pre></div></div>
+
+<h2 id="the-begin-section">The BEGIN Section</h2>
+<p>The first block of the program called ‘BEGIN’ is a special section that gets executed before any records are processed. In this case we use the begin block to initialize two variables to 0 and to print out a header line to standard output.</p>
+
+<h2 id="the-middle-block">The Middle Block</h2>
+<p>The middle section of the program is an awk condition-command pair that gets executed for every input record. Lets look at the awk condition in detail: ‘$1 ~ /<REGULAREXPRESSION>/':</REGULAREXPRESSION></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Awk condition component</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$1</td>
+      <td>$1 in awk represents the first field encountered in this record.</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>A ~ character attempts to match a value to a regular expression</td>
+    </tr>
+    <tr>
+      <td>/ regular-expression  /</td>
+      <td>The regular expression is written between two ‘/’ characters</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+The regular expression ^[0-9]<em>(.[0-9]</em>)?$ will match all numbers and exclude any input lines which are non numbers or contain non-numeric characters (See table below for details).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regular Expression Component</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>^</td>
+      <td>Regular expression to match from the beginning of the field</td>
+    </tr>
+    <tr>
+      <td>[0-9]*</td>
+      <td>Match a series of numbers</td>
+    </tr>
+    <tr>
+      <td>(.[0-9]*)?</td>
+      <td>Match an optional decimal component to the number</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Marks the end of the field</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The expression above ensures every number that appears in the input is processed by our awk command ‘a[c++] = $1’. With this command we are saving each input field into an array so that we can calculate the median later. Also by incrementing a ‘sum’ variable we are keeping a running total of all values encountered.</p>
+
+<h2 id="the-end-block">The END Block</h2>
+<p>The END section is executed after all input records have been processed. After processing each record we have an array called ‘a’ which contains every number encountered on the input. Since the first command in the script (before invoking awk) is <a href="https://en.wikipedia.org/wiki/Sort_(Unix)">sort</a> we know the array is ordered, which makes finding the min and max as simple as grabbing the first and last item of the array.</p>
+
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>Using the above awk script we can quickly analyze numeric values on the command line. Also, we can incorporate basic performance metrics into automated scripts.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">HumanReadable Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              HumanReadable Blog
+            
+            </li>
+            
+            <li><a href="mailto:mode19software@gmail.com">mode19software@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/mode19"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">mode19</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Computers, Linux, open-source, programming, technology and related articles</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
