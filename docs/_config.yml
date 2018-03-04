@@ -28,9 +28,12 @@ safe : false
 plugins:
   - jekyll-feed
 
+google_analytics: UA-113325585-1
+
 jgraphs:
       dirname: /assets/images/
       format: ojbect
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -21,3 +21,4 @@ URL: http://mode19.github.io/humanreadable/
 
 ## Notes/credits
 https://www.liaohuqiu.net/posts/jekyll-plugins-on-github-pages/
+https://michaelsoolee.com/google-analytics-jekyll/
