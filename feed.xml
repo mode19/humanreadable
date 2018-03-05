@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-03-04T14:41:42-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Quick and Dirty Software Metrics using Awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html" rel="alternate" type="text/html" title="Quick and Dirty Software Metrics using Awk" /><published>2018-03-01T00:00:00-05:00</published><updated>2018-03-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-03-04T21:18:05-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Quick and Dirty Software Metrics using Awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html" rel="alternate" type="text/html" title="Quick and Dirty Software Metrics using Awk" /><published>2018-03-01T00:00:00-05:00</published><updated>2018-03-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together data from different sources and using only command-line access. The UNIX command line has lots of great text processing utilities such as cat, tail, grep, awk etc, however, numerical analysis can be challenging on the command-line.
   In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.&lt;/p&gt;
 
@@ -482,7 +482,230 @@ define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt;
   &lt;li&gt;Websites like reddit, monster.com, craigslist etc etc&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry><entry><title type="html">Welcome to the Blog</title><link href="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html" rel="alternate" type="text/html" title="Welcome to the Blog" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/admin/2017/01/01/welcome</id><content type="html" xml:base="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html">&lt;p&gt;I believe it was Albert Einstein that said: “If you’re not learning you’re dying”.  Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.&lt;/p&gt;
+&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics.md.bak" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics.md</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics.md.bak">## Introduction
+  When troubleshooting software we usually don't have all the required information in one place. Often we only have command-line access to low level application and system log files.
+  Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance.
+Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.
+
+## Pre-requisites
+ * Be comfortable using the unix command line such as [cat](https://en.wikipedia.org/wiki/Cat_(Unix)), [tail](https://en.wikipedia.org/wiki/Tail_(Unix)), [grep](https://en.wikipedia.org/wiki/Grep) etc.
+ * Have access to the calc.sh script which can calculate average/median/minimum and maximum times, see the corresponding guide [Quick and Dirty Software Metrics using Awk](https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html)
+
+## Why?
+
+ Lets look at real world situation: a customer has complained that some operations in the system are taking too long. Luckily the developer included some logging in the application that records how long each operation takes. If we view the log file directly we can see an entry for every event that occurred. Now imagine this log contains thousands or millions of records? How will we identify which events are being triggered in the system? How frequently are certain types of events occurring? How long does each type of event take to process (Average, mininum, maximum time etc)? The below guide is a step by step example of how to calculate these kinds of metrics.
+
+ Imagine a logfile that looks as follows: 
+
+```
+2018-03-03 12:00:14 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-03 12:00:15 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 20440 ms
+2018-03-03 12:00:16 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-04 12:00:24 SOFTWAREPROGRAM MODULE ERROR [sessionx] processing event #1 took 20440 ms
+2018-03-04 12:01:04 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 16628 ms
+2018-03-04 12:02:53 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #0 took 11418 ms
+2018-03-04 12:03:00 SOFTWAREPROGRAM MODULE INFO [sessiony] processing event #1 took 28995 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 28166 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #0 took 26063 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 27168 ms
+2018-03-04 12:07:31 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #0 took 30484 ms
+2018-03-04 12:08:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 27769 ms
+2018-03-04 12:09:07 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #1 took 16378 ms
+
+```
+## Filtering and Counting Events
+
+When faced with thousands of records, the first step is to filter out the records we are not interested in.  We do this by identifying a set of specific key words that we are interested in, and we chose these key words so that they uniquely identify the event we are interested.  For example, searching for &quot;event #1&quot; might also match &quot;event #11&quot;, so in order to uniquely identify &quot;\sevent #1\s&quot; we would have to also include the surrounding white-space as part of the matching expression. In this example only 2 events so we can safely filter &quot;event #1&quot;. See the examples below to filter out unwanted records by using [grep](https://en.wikipedia.org/wiki/Cut_(Unix)) and counting the remaining ones using the [wc](https://en.wikipedia.org/wiki/Wc_(Unix)) utility .
+
+
+How many events happened on March 3rd?
+
+    cat logfile.txt  | grep &quot;2018-03-03&quot; | wc -l
+    3
+
+How many events happened on March 2nd? 
+
+    cat logfile.txt  | grep &quot;2018-03-02&quot; | wc -l
+    0
+
+How many events of type &quot;event #1&quot; happened on March 4th?
+
+    cat logfile.txt  | grep &quot;2018-03-04&quot; | grep &quot;event #1&quot; | wc -l
+    7
+
+How many events happened for sessionz on March 4th? 
+
+	cat logfile.txt  | grep &quot;2018-03-04&quot; | grep &quot;event #1 &quot; | grep &quot;\[sessionz\]&quot; | wc -l
+	1
+
+N.B Notice the regular expression to match the session identifier sessionz includes the surround delimiters.  This avoids situations where sessionz could become a false positive for sessionzz or sessionz1 etc.
+
+## Cutting and Counting
+
+We can use the [cut](https://en.wikipedia.org/wiki/Cut_(Unix)) commmand to iscolate specific fields.  This way we can aggregate data over specific groups such as time. Using the [sort](https://en.wikipedia.org/wiki/Sort_(Unix)) and [uniq](https://en.wikipedia.org/wiki/Uniq) utilities we can count the unique number of occurrences of each event by group.
+
+For example, how many events are happening per day?
+
+    cat logfile.txt | cut -f1 -d&quot; &quot; | sort | uniq -c
+    3 2018-03-03
+    10 2018-03-04
+
+How many events are happening per second?
+
+    cat logfile.txt | cut -d &quot; &quot; -f1,2   | uniq -c
+    1 2018-03-03 12:00:14
+    1 2018-03-03 12:00:15
+    1 2018-03-03 12:00:16
+    1 2018-03-04 12:00:24
+    1 2018-03-04 12:01:04
+    1 2018-03-04 12:02:53
+    1 2018-03-04 12:03:00
+    3 2018-03-04 12:04:44
+    1 2018-03-04 12:07:31
+    1 2018-03-04 12:08:44
+    1 2018-03-04 12:09:07
+
+## What is the Average Processing Time of Event #0?
+
+  In order to iscolate the log entries containting &quot;event #0&quot; and identifying only the processing time we can produce a list of all corresponding processing times.
+
+    cat logfile.txt  | grep &quot;event #0 &quot;
+    2018-03-04 12:2:53 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 11418 ms
+    2018-03-04 12:5:21 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 26063 ms
+    2018-03-04 12:7:31 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 30484 ms
+
+What are just the response times? Using the [sed](https://en.wikipedia.org/wiki/Sed) utility substitution command to replace the entire line with only the portion in between the word 'took ' and the word ' ms':
+
+    cat logfile.txt  | grep &quot;event #0&quot; | sed -ne 's/.*took \([0-9]*\) ms/\1/p'
+    11418
+    26063
+    30484
+
+Now how do we make sense of this data?  Especially if the result contains hundreds or thousands of records, how can we begin to understand the data?  One quick way is to calculate the average, minimum and maximum values.  This can be done using an awk script (For details on the calc.sh script reference the blog post [here](https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html)):
+
+    cat logfile.text | grep &quot;event #0&quot; | sed -ne 's/.*took \([0-9]*\) ms/\1/p' | ~/bin/calc.sh
+    sum     count   average medium  min     max
+    67965   3       22655   26063   11418   30484
+
+## Conlusion and Next Steps
+
+  Using these techniques we can analyze large log files to search for specifc values or events. These techniques can work when quering a single file or combining muliple files together. Also, since these techniques are done on the command-line they can be easily scripts and repeated or executed in an automated fashion.  With a few basic scrips one can develop sophisticated techniques for measuring software metrics. Check back for future articles on how to take these metrics and seemlessly create graphs using the gnuplot command-line utility.</content><author><name></name></author><summary type="html">## Introduction When troubleshooting software we usually don't have all the required information in one place. Often we only have command-line access to low level application and system log files. Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance. Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.</summary></entry><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics.html" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2017/01/01/Command-line-log-metrics.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files.
+  Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance.
+Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.&lt;/p&gt;
+
+&lt;h2 id=&quot;pre-requisites&quot;&gt;Pre-requisites&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Be comfortable using the UNIX command line such as &lt;a href=&quot;https://en.wikipedia.org/wiki/Cat_(Unix)&quot;&gt;cat&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Tail_(Unix)&quot;&gt;tail&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Grep&quot;&gt;grep&lt;/a&gt; etc.&lt;/li&gt;
+  &lt;li&gt;Have access to the calc.sh script which can calculate average/median/minimum and maximum times, see the corresponding guide &lt;a href=&quot;https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html&quot;&gt;Quick and Dirty Software Metrics using Awk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;Lets look at real world situation: a customer has complained that some operations in the system are taking too long. Luckily the developer included some logging in the application that records how long each operation takes. If we view the log file directly we can see an entry for every event that occurred. Now imagine this log contains thousands or millions of records? How will we identify which events are being triggered in the system? How frequently are certain types of events occurring? How long does each type of event take to process (Average, minimum, maximum time etc)? The below guide is a step by step example of how to calculate these kinds of metrics.&lt;/p&gt;
+
+&lt;p&gt;Imagine a logfile that looks as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2018-03-03 12:00:14 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-03 12:00:15 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 20440 ms
+2018-03-03 12:00:16 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-04 12:00:24 SOFTWAREPROGRAM MODULE ERROR [sessionx] processing event #1 took 20440 ms
+2018-03-04 12:01:04 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 16628 ms
+2018-03-04 12:02:53 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #0 took 11418 ms
+2018-03-04 12:03:00 SOFTWAREPROGRAM MODULE INFO [sessiony] processing event #1 took 28995 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 28166 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #0 took 26063 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 27168 ms
+2018-03-04 12:07:31 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #0 took 30484 ms
+2018-03-04 12:08:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 27769 ms
+2018-03-04 12:09:07 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #1 took 16378 ms
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;filtering-and-counting-events&quot;&gt;Filtering and Counting Events&lt;/h2&gt;
+
+&lt;p&gt;When faced with thousands of records, the first step is to filter out the records we are not interested in.  We do this by identifying a set of specific key words that we are interested in, and we chose these key words so that they uniquely identify the event we are interested.  For example, searching for “event #1” might also match “event #11”, so in order to uniquely identify “\sevent #1\s” we would have to also include the surrounding white-space as part of the matching expression. In this example only 2 events so we can safely filter “event #1”. See the examples below to filter out unwanted records by using &lt;a href=&quot;https://en.wikipedia.org/wiki/Cut_(Unix)&quot;&gt;grep&lt;/a&gt; and counting the remaining ones using the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wc_(Unix)&quot;&gt;wc&lt;/a&gt; utility .&lt;/p&gt;
+
+&lt;p&gt;How many events happened on March 3rd?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;2018-03-03&quot; | wc -l
+3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;How many events happened on March 2nd?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;2018-03-02&quot; | wc -l
+0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;How many events of type “event #1” happened on March 4th?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;2018-03-04&quot; | grep &quot;event #1&quot; | wc -l
+7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;How many events happened for sessionz on March 4th?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;2018-03-04&quot; | grep &quot;event #1 &quot; | grep &quot;\[sessionz\]&quot; | wc -l
+1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;N.B Notice the regular expression to match the session identifier sessionz includes the surround delimiters.  This avoids situations where sessionz could become a false positive for sessionzz or sessionz1 etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;cutting-and-counting&quot;&gt;Cutting and Counting&lt;/h2&gt;
+
+&lt;p&gt;We can use the &lt;a href=&quot;https://en.wikipedia.org/wiki/Cut_(Unix)&quot;&gt;cut&lt;/a&gt; command to isolate specific fields.  This way we can aggregate data over specific groups such as time. Using the &lt;a href=&quot;https://en.wikipedia.org/wiki/Sort_(Unix)&quot;&gt;sort&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Uniq&quot;&gt;uniq&lt;/a&gt; utilities we can count the unique number of occurrences of each event by group.&lt;/p&gt;
+
+&lt;p&gt;For example, how many events are happening per day?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt | cut -f1 -d&quot; &quot; | sort | uniq -c
+3 2018-03-03
+10 2018-03-04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;How many events are happening per second?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt | cut -d &quot; &quot; -f1,2   | uniq -c
+1 2018-03-03 12:00:14
+1 2018-03-03 12:00:15
+1 2018-03-03 12:00:16
+1 2018-03-04 12:00:24
+1 2018-03-04 12:01:04
+1 2018-03-04 12:02:53
+1 2018-03-04 12:03:00
+3 2018-03-04 12:04:44
+1 2018-03-04 12:07:31
+1 2018-03-04 12:08:44
+1 2018-03-04 12:09:07
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;what-is-the-average-processing-time-of-event-0&quot;&gt;What is the Average Processing Time of Event #0?&lt;/h2&gt;
+
+&lt;p&gt;In order to isolate the log entries containing “event #0” and identifying only the processing time we can produce a list of all corresponding processing times.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;event #0 &quot;
+2018-03-04 12:2:53 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 11418 ms
+2018-03-04 12:5:21 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 26063 ms
+2018-03-04 12:7:31 SOFTWAREPROGRAM MODULE DEBUG processing event #0 took 30484 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What are just the response times? Using the &lt;a href=&quot;https://en.wikipedia.org/wiki/Sed&quot;&gt;sed&lt;/a&gt; utility substitution command to replace the entire line with only the portion in between the word ‘took ‘ and the word ‘ ms’:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.txt  | grep &quot;event #0&quot; | sed -ne 's/.*took \([0-9]*\) ms/\1/p'
+11418
+26063
+30484
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now how do we make sense of this data?  Especially if the result contains hundreds or thousands of records, how can we begin to understand the data?  One quick way is to calculate the average, minimum and maximum values.  This can be done using an awk script (For details on the calc.sh script reference the blog post &lt;a href=&quot;https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html&quot;&gt;here&lt;/a&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat logfile.text | grep &quot;event #0&quot; | sed -ne 's/.*took \([0-9]*\) ms/\1/p' | ~/bin/calc.sh
+sum     count   average medium  min     max
+67965   3       22655   26063   11418   30484
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion-and-next-steps&quot;&gt;Conclusion and Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Using these techniques we can analyze large log files to search for specific values or events. These techniques can work when querying a single file or combining multiple files together. Also, since these techniques are done on the command-line they can be easily scripts and repeated or executed in an automated fashion.  With a few basic scrips one can develop sophisticated techniques for measuring software metrics. Check back for future articles on how to take these metrics and seamlessly create graphs using the gnuplot command-line utility.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files. Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance. Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.</summary></entry><entry><title type="html">Welcome to the Blog</title><link href="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html" rel="alternate" type="text/html" title="Welcome to the Blog" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/admin/2017/01/01/welcome</id><content type="html" xml:base="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html">&lt;p&gt;I believe it was Albert Einstein that said: “If you’re not learning you’re dying”.  Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.&lt;/p&gt;
 
 &lt;p&gt;As a software developer I am constantly exploring new technologies and tinkering with a wide variety of tools. This blog is intended to share some of those ideas and learnings.&lt;/p&gt;
 
