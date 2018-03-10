@@ -10,11 +10,15 @@ categories: awk, UNIX
   In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.
 
 ## Prerequisites
- * Basic familiarity with UNIX command line such as cat, tail, grep etc
+ * Basic familiarity with UNIX command line utilities such as cat, tail, grep etc
 
-## Given a List of Numbers what are the Average, Minimum and Maximum values?
+## How to make Sense of a List of Numbers?
 
-Given the following file numbers.txt. How do we quickly calculate the average or maximum value?
+With computers we are constantly dealing with vast quantities of data and numbers. 
+
+![Matrix Numbers](/humanreadable/assets/images/green_numbers.png)
+
+The image above looks a bit intimiating, so lets break it down to a simpler example such as this file below: numbers.txt. This could be a list of response times for a software service, or an average number of monthly logins for a certain type of customers, it could be a monetary amount such as a list of prices paid for a service. Given this list of numbers how do we begin to make sense of it and analyze it?
 
 ```
 cat numbers.txt
@@ -32,15 +36,14 @@ cat numbers.txt
 23
 9144
 ```
-We can [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) the file to standard output and pipe the data into our calc.sh script as follows:
+One way is to using a UNIX script to calculate some basic metrics such as averages. We can [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) the file to standard output and pipe the data into our script as follows:
 
 ```
 cat numbers.txt | ~/bin/calc.sh 
 sum     count   avg     median  min     max
 105787  13      8137.47 392     11      29343
 ```
-
-Lets look at how to create our own calc.sh script using the UNIX text processing utility awk.
+Lets look at how to create our own calc.sh script using the UNIX text processing utility <a href="https://en.wikipedia.org/wiki/AWK">Awk</a>.
 
 ## What is awk
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk"
-date:   2017-01-01
+date:   2018-03-02
 categories: awk, UNIX
 ---
 
@@ -10,9 +10,9 @@ categories: awk, UNIX
   Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance.
 Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.
 
-## Pre-requisites
- * Be comfortable using the UNIX command line such as [cat](https://en.wikipedia.org/wiki/Cat_(Unix)), [tail](https://en.wikipedia.org/wiki/Tail_(Unix)), [grep](https://en.wikipedia.org/wiki/Grep) etc.
- * Have access to the calc.sh script which can calculate average/median/minimum and maximum times, see the corresponding guide [Quick and Dirty Software Metrics using Awk](https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html)
+## Prerequisites
+ * Be comfortable using the UNIX command line utilities such as [cat](https://en.wikipedia.org/wiki/Cat_(Unix)), [tail](https://en.wikipedia.org/wiki/Tail_(Unix)), [grep](https://en.wikipedia.org/wiki/Grep) etc.
+ * Have access to the calc.sh (or some alternative) script which can calculate average/median/minimum and maximum times. See the corresponding guide [Quick and Dirty Software Metrics using Awk](https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html)
 
 ## Why?
 
