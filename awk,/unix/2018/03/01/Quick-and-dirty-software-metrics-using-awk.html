@@ -86,12 +86,16 @@
 
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-  <li>Basic familiarity with UNIX command line such as cat, tail, grep etc</li>
+  <li>Basic familiarity with UNIX command line utilities such as cat, tail, grep etc</li>
 </ul>
 
-<h2 id="given-a-list-of-numbers-what-are-the-average-minimum-and-maximum-values">Given a List of Numbers what are the Average, Minimum and Maximum values?</h2>
+<h2 id="how-to-make-sense-of-a-list-of-numbers">How to make Sense of a List of Numbers?</h2>
 
-<p>Given the following file numbers.txt. How do we quickly calculate the average or maximum value?</p>
+<p>With computers we are constantly dealing with vast quantities of data and numbers.</p>
+
+<p><img src="/humanreadable/assets/images/green_numbers.png" alt="Matrix Numbers" /></p>
+
+<p>The image above looks a bit intimiating, so lets break it down to a simpler example such as this file below: numbers.txt. This could be a list of response times for a software service, or an average number of monthly logins for a certain type of customers, it could be a monetary amount such as a list of prices paid for a service. Given this list of numbers how do we begin to make sense of it and analyze it?</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat numbers.txt
 22
@@ -108,14 +112,13 @@
 23
 9144
 </code></pre></div></div>
-<p>We can <a href="https://en.wikipedia.org/wiki/Cat_(Unix)">cat</a> the file to standard output and pipe the data into our calc.sh script as follows:</p>
+<p>One way is to use a UNIX script to calculate some basic metrics such as averages. We can <a href="https://en.wikipedia.org/wiki/Cat_(Unix)">cat</a> the file to standard output and pipe the data into our script as follows:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat numbers.txt | ~/bin/calc.sh 
 sum     count   avg     median  min     max
 105787  13      8137.47 392     11      29343
 </code></pre></div></div>
-
-<p>Lets look at how to create our own calc.sh script using the UNIX text processing utility awk.</p>
+<p>Lets look at how to create our own calc.sh script using the UNIX text processing utility <a href="https://en.wikipedia.org/wiki/AWK">Awk</a>.</p>
 
 <h2 id="what-is-awk">What is awk</h2>
 
