@@ -36,7 +36,7 @@ cat numbers.txt
 23
 9144
 ```
-One way is to using a UNIX script to calculate some basic metrics such as averages. We can [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) the file to standard output and pipe the data into our script as follows:
+One way is to use a UNIX script to calculate some basic metrics such as averages. We can [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) the file to standard output and pipe the data into our script as follows:
 
 ```
 cat numbers.txt | ~/bin/calc.sh 
