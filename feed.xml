@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-03-11T13:55:30-04:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2018-03-02T00:00:00-05:00</published><updated>2018-03-02T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2018-07-29T18:41:49-04:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Testing Cloud Services - Book Notes</title><link href="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html" rel="alternate" type="text/html" title="Testing Cloud Services - Book Notes" /><published>2018-07-01T00:00:00-04:00</published><updated>2018-07-01T00:00:00-04:00</updated><id>https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services</id><content type="html" xml:base="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">&lt;h2 id=&quot;testing-cloud-services&quot;&gt;Testing Cloud Services&lt;/h2&gt;
+
+&lt;p&gt;This book by Kees Blokland, Jeroen Mongerink and Martin Pol - How to test Saas, Paas &amp;amp; Iaas provides a great intro and quick overview of designing a test strategy for the cloud.&lt;/p&gt;
+
+&lt;p&gt;It begins with the &lt;a href=&quot;https://www.nist.gov/programs-projects/nist-cloud-computing-program-nccp&quot;&gt;National Institute of Standards and Technology&lt;/a&gt; definitions of cloud computing.  For example describing the three service models:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Software as a Service (SaaS)&lt;/li&gt;
+  &lt;li&gt;Platform as a Service (PaaS)&lt;/li&gt;
+  &lt;li&gt;Infrastructure as a Service (Iaas)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Details found &lt;a href=&quot;https://csrc.nist.gov/publications/detail/sp/800-145/final&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using the &lt;a href=&quot;https://en.wikipedia.org/wiki/V-Model_(software_development)&quot;&gt;V-model&lt;/a&gt; as a reference for the software development model the authors describe how cloud computing changes the testing landscape throughout the various phases of software development.&lt;/p&gt;
+
+&lt;p&gt;The book neatly segregates into the following sections:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Service Selection - how to chose providers and services in a complex landscape of vendors and services?&lt;/li&gt;
+  &lt;li&gt;Performance - how do we measure if the service responds quickly enough?&lt;/li&gt;
+  &lt;li&gt;Maintainability - costs of service management&lt;/li&gt;
+  &lt;li&gt;Continuity - does the service meet business requirements?&lt;/li&gt;
+  &lt;li&gt;Availability - what happens in case of failure?
+    &lt;ul&gt;
+      &lt;li&gt;Describes &lt;a href=&quot;https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis&quot;&gt;Failure-mode-and-effects&lt;/a&gt; analysis as a useful technique in this area&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Functionality - functional testing requirements
+    &lt;ul&gt;
+      &lt;li&gt;Mentions &lt;a href=&quot;https://www.youtube.com/watch?v=Lhyc5BSsLFs&quot;&gt;Process Cycle Test&lt;/a&gt; technique as a way to generate test test cases&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This book quickly covers the above areas as a broad sweep of the challenges and benefits encountered when testing in the cloud. Each section as well provides a set of questions to be used as a great starting point for designing test strategies.&lt;/p&gt;</content><author><name></name></author><summary type="html">Testing Cloud Services</summary></entry><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2018-03-02T00:00:00-05:00</published><updated>2018-03-02T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files.
   Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance.
 Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.&lt;/p&gt;

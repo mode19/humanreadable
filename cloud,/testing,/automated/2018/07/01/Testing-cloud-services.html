@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HumanReadable Blog</title>
-  <meta name="description" content="Computers, Linux, open-source, programming, technology and related articles">
+  <title>Testing Cloud Services - Book Notes</title>
+  <meta name="description" content="Testing Cloud Services">
 
   <link rel="stylesheet" href="/humanreadable/assets/main.css">
-  <link rel="canonical" href="https://mode19.github.io/humanreadable/">
+  <link rel="canonical" href="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">
   <link rel="alternate" type="application/rss+xml" title="HumanReadable Blog" href="/humanreadable/feed.xml">
   
   
@@ -93,83 +93,60 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Testing Cloud Services - Book Notes</h1>
+    <p class="post-meta">
+      <time datetime="2018-07-01T00:00:00-04:00" itemprop="datePublished">
+        
+        Jul 1, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="testing-cloud-services">Testing Cloud Services</h2>
+
+<p>This book by Kees Blokland, Jeroen Mongerink and Martin Pol - How to test Saas, Paas &amp; Iaas provides a great intro and quick overview of designing a test strategy for the cloud.</p>
+
+<p>It begins with the <a href="https://www.nist.gov/programs-projects/nist-cloud-computing-program-nccp">National Institute of Standards and Technology</a> definitions of cloud computing.  For example describing the three service models:</p>
+
+<ul>
+  <li>Software as a Service (SaaS)</li>
+  <li>Platform as a Service (PaaS)</li>
+  <li>Infrastructure as a Service (Iaas)</li>
+</ul>
+
+<p>Details found <a href="https://csrc.nist.gov/publications/detail/sp/800-145/final">here</a>.</p>
+
+<p>Using the <a href="https://en.wikipedia.org/wiki/V-Model_(software_development)">V-model</a> as a reference for the software development model the authors describe how cloud computing changes the testing landscape throughout the various phases of software development.</p>
+
+<p>The book neatly segregates into the following sections:</p>
+
+<ul>
+  <li>Service Selection - how to chose providers and services in a complex landscape of vendors and services?</li>
+  <li>Performance - how do we measure if the service responds quickly enough?</li>
+  <li>Maintainability - costs of service management</li>
+  <li>Continuity - does the service meet business requirements?</li>
+  <li>Availability - what happens in case of failure?
+    <ul>
+      <li>Describes <a href="https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis">Failure-mode-and-effects</a> analysis as a useful technique in this area</li>
+    </ul>
+  </li>
+  <li>Functionality - functional testing requirements
+    <ul>
+      <li>Mentions <a href="https://www.youtube.com/watch?v=Lhyc5BSsLFs">Process Cycle Test</a> technique as a way to generate test test cases</li>
+    </ul>
+  </li>
+</ul>
+
+<p>This book quickly covers the above areas as a broad sweep of the challenges and benefits encountered when testing in the cloud. Each section as well provides a set of questions to be used as a great starting point for designing test strategies.</p>
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        
-        <span class="post-meta">Jul 1, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">Testing Cloud Services - Book Notes</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 2, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 1, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">Quick and Dirty Software Metrics using Awk</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 9, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/vim/2018/01/09/vim-global-commmand.html">VIM Quick Tip: The Global Command</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 9, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">JavaScript Quick Tip: Stringifying an Object with Indentation</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Nov 14, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">Manage your News Feeds with Newsbeuter and DigitalOcean</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 1, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/admin/2017/01/01/welcome.html">Welcome to the Blog</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/humanreadable/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
