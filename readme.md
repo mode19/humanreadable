@@ -19,10 +19,12 @@ URL: https://rubygems.org/pages/download
 URL: http://localhost:4000/humanreadable/
 URL: http://mode19.github.io/humanreadable/
 
-## Publishing 
+## Building/Publishing 
 
 1. checkout master branch - commit changes/push
-2. re-build the jekyll site: jekyll clean build
+2. re-build the jekyll site: 
+        jekyll clean
+        JEKYLL_ENV=production jekyll build
 3. checkout gh-pages
 4. copy site from master branch: cp -r $MASTER_BRANCH_LOCATION/docs/_site/* .
 5. commit gh-pages
