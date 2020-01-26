@@ -1,0 +1,13 @@
+2018-03-03 12:00:14 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-03 12:00:15 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 20440 ms
+2018-03-03 12:00:16 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 20440 ms
+2018-03-04 12:00:24 SOFTWAREPROGRAM MODULE ERROR [sessionx] processing event #1 took 20440 ms
+2018-03-04 12:01:04 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #1 took 16628 ms
+2018-03-04 12:02:53 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #0 took 11418 ms
+2018-03-04 12:03:00 SOFTWAREPROGRAM MODULE INFO [sessiony] processing event #1 took 28995 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 28166 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE DEBUG [sessiony] processing event #0 took 26063 ms
+2018-03-04 12:04:44 SOFTWAREPROGRAM MODULE INFO [sessionx] processing event #1 took 27168 ms
+2018-03-04 12:07:31 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #0 took 30484 ms
+2018-03-04 12:08:44 SOFTWAREPROGRAM MODULE DEBUG [sessionx] processing event #1 took 27769 ms
+2018-03-04 12:09:07 SOFTWAREPROGRAM MODULE DEBUG [sessionz] processing event #1 took 16378 ms

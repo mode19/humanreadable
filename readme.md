@@ -2,6 +2,7 @@
 
 ## Important Commands
 CMDURL: bundle exec jekyll serve 
+bundle exec jekyll serve --host 0.0.0.0 
 CMDURL: bundle show minima
 
 ## Installation Stuff
