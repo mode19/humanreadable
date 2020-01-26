@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My custom vim setup</title>
+  <meta name="description" content="My custom vim setup">
+
+  <link rel="stylesheet" href="/humanreadable/assets/main.css">
+  <link rel="canonical" href="https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html">
+  <link rel="alternate" type="application/rss+xml" title="HumanReadable Blog" href="/humanreadable/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-113325585-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+
+  
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-113325585-1', 'auto');
+	ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
+	ga('set', 'anonymizeIp', false);
+    </script>
+    <!-- End Google Analytics -->
+    </head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/humanreadable/">HumanReadable Blog</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/humanreadable/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">My custom vim setup</h1>
+    <p class="post-meta">
+      <time datetime="2018-08-01T00:00:00+00:00" itemprop="datePublished">
+        
+        Aug 1, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="my-custom-vim-setup">My custom vim setup</h2>
+
+<p>Install tpope’s stuff, its awesome:</p>
+
+<p>https://github.com/tpope/vim-pathogen</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+</code></pre></div></div>
+
+<p>https://github.com/VundleVim/Vundle.vim/blob/v0.10.2/doc/vundle.txt#L234-L254</p>
+
+<p>start vim</p>
+
+<p>run :PluginInstall</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>syntax on
+execute pathogen#infect()
+colorscheme distinguished
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+
+set tags=./tags,tags;$HOME
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+Bundle 'tpope/vim-dispatch'
+Bundle 'mklabs/grunt.vim'
+"Bundle 'elzr/vim-json'
+Bundle 'majutsushi/tagbar'
+"Bundle 'mhinz/vim-signify'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'nanotech/jellybeans.vim'
+"Bundle 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Plugin 'maksimr/vim-jsbeautify'
+"Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mileszs/ack.vim'
+"Plugin 'pangloss/vim-javascript'
+Plugin 'https://github.com/heavenshell/vim-jsdoc'
+
+call vundle#end()            " required
+
+"________________________________________________________________________________
+
+function! OpenCurrentDir()
+    execute "!cygstart" . " " . getcwd()
+endfunction
+
+function! OpenCurrentFile()
+    execute "!cygstart %"
+endfunction
+"________________________________________________________________________________
+
+"tern plugin
+"call tern#Disable()
+
+filetype plugin indent on    " required
+
+map &lt;leader&gt;cd :call OpenCurrentDir()&lt;cr&gt;
+map &lt;leader&gt;cf :call OpenCurrentFile()&lt;cr&gt;
+map &lt;leader&gt;ff :call JsBeautify()&lt;cr&gt;
+map &lt;leader&gt;d :w! ~/dump.txt&lt;cr&gt;
+map &lt;leader&gt;p :r ~/dump.txt&lt;cr&gt;
+"ack plugin
+let g:ackprg = "~/bin/ack"
+
+" Switch to alternate file - doesnt' work in screen/console
+map &lt;c-Tab&gt; :bnext&lt;cr&gt;
+map &lt;c-S-Tab&gt; :bprevious&lt;cr&gt;
+" try again
+map &lt;c-i&gt; :bnext&lt;cr&gt;
+map &lt;c-u&gt; :bprevious&lt;cr&gt;
+
+"color jellybeans
+command! Test Dispatch grunt test --filter %:t:r
+nnoremap &lt;localleader&gt;tt :Test&lt;CR&gt;
+
+set foldmethod=syntax
+"set foldlevelstart=1
+"folder level start to unreasonable high level so as to open folds, as by
+"default folds are close on 'start' (opening of buffer)
+set foldlevelstart=20
+
+"let javaScript_fold=1         " JavaScript
+
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+
+:set smartcase
+
+"Airline
+"________________________________________________________________________________
+let g:airline#extensions#tabline#enabled = 1
+
+" jelera/vim-javascript-syntax
+"________________________________________________________________________________
+"au FileType javascript call JavaScriptFold()
+
+" pangloss/vim-javascript
+"________________________________________________________________________________
+set conceallevel=0
+"set conceallevel=1
+set concealcursor=nvic
+
+let b:javascript_fold=0
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "&lt;ret&gt;"
+let g:javascript_conceal_undefined  = "&lt;undef&gt;"
+"let g:javascript_conceal_NaN        = "ℕ"
+"let g:javascript_conceal_prototype  = "¶"
+"let g:javascript_conceal_static     = "•"
+"let g:javascript_conceal_super      = "Ω"
+
+" Configure tagbar
+"________________________________________________________________________________
+"let g:tagbar_width = 30
+"let g:tagbar_ctags_bin = '/usr/bin/ctags'
+"let g:tagbar_autopreview = 1
+autocmd VimEnter * nested :TagbarOpen
+nmap &lt;leader&gt;t :TagbarToggle&lt;CR&gt;
+
+" netrw
+"________________________________________________________________________________
+"let mapleader=" "
+"map &lt;leader&gt;k :E&lt;cr&gt;
+"let g:netrw_liststyle=3
+"let g:netrw_browse_split=4
+"" do not display info on the top of window
+"let g:netrw_banner = 0
+"let g:netrw_altv = 1
+"let g:netrw_winsize = 25
+"
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+
+"CTRLP
+"________________________________________________________________________________
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|target\|bin'
+"g:ctrlp_match_window = 'min:4,max:72'
+"i" Use a leader instead of the actual named binding
+"nmap &lt;leader&gt;p :CtrlP&lt;cr&gt;
+"
+"" Easy bindings for its various modes
+nmap &lt;leader&gt;b :CtrlPBuffer&lt;cr&gt;
+nmap &lt;leader&gt;bm :CtrlPMixed&lt;cr&gt;
+nmap &lt;leader&gt;bs :CtrlPMRU&lt;cr&gt;
+
+"syntastic
+"________________________________________________________________________________
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+"let g:syntastic_javascript_checkers = ['jscs','jshint', 'eslint']
+let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_javascript_checkers = ['eslint']
+"
+let g:syntastic_aggregate_errors = 1
+
+" NERDTree
+"________________________________________________________________________________
+nmap &lt;leader&gt;n :NERDTreeToggle&lt;CR&gt;
+let NERDTreeHighlightCursorline=1
+"autocmd vimenter * NERDTree
+let NERDTreeIgnore = ['tmp', '.git', 'node_modules']
+autocmd bufenter * if (winnr("$") == 1 &amp;&amp; exists("b:NERDTreeType") &amp;&amp; b:NERDTreeType == "primary") | q | endif
+
+"Plugin 'https://github.com/heavenshell/vim-jsdoc'
+let g:jsdoc_allow_input_prompt = 1
+let g:jsdoc_input_description = 1
+let g:jsdoc_return = 0
+let g:jsdoc_return_type = 0
+let g:jsdoc_return_description = 0
+</code></pre></div></div>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">HumanReadable Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              HumanReadable Blog
+            
+            </li>
+            
+            <li><a href="mailto:mode19software@gmail.com">mode19software@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/mode19"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">mode19</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Computers, Linux, open-source, programming, technology and related articles</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>JavaScript Quick Tip: Stringifying an Object with Indentation</title>
-  <meta name="description" content="In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and ...">
+  <title>Some Docker Commands</title>
+  <meta name="description" content="Some Docker Commands">
 
   <link rel="stylesheet" href="/humanreadable/assets/main.css">
-  <link rel="canonical" href="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">
+  <link rel="canonical" href="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html">
   <link rel="alternate" type="application/rss+xml" title="HumanReadable Blog" href="/humanreadable/feed.xml">
   
   
@@ -96,46 +96,39 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">JavaScript Quick Tip: Stringifying an Object with Indentation</h1>
+    <h1 class="post-title" itemprop="name headline">Some Docker Commands</h1>
     <p class="post-meta">
-      <time datetime="2018-01-09T00:00:00+00:00" itemprop="datePublished">
+      <time datetime="2018-09-03T00:00:00+00:00" itemprop="datePublished">
         
-        Jan 9, 2018
+        Sep 3, 2018
       </time>
       </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>In JavaScript the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify</a> method provides a way of converting a JavaScript object to a string.  This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.</p>
+    <h2 id="some-docker-commands">Some Docker Commands</h2>
 
-<p>For example, take the following JavaScript object:</p>
+<p>Start a new or exisitng container</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
- <span class="na">test</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
- <span class="na">arr</span> <span class="p">:</span> <span class="p">[</span>
-  <span class="p">{</span><span class="na">a</span> <span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
-  <span class="p">{</span><span class="na">b</span> <span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
- <span class="p">]</span>
-<span class="p">};</span></code></pre></figure>
-
-<p>Pass it to the stringify function with the following parameters:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">obj</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span></code></pre></figure>
-
-<p>The end result is a string that is indented and formatted as a readable string:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-    "test": 1,
-    "arr": [
-        {
-            "a": 1
-        },
-        {
-            "b": 2
-        }
-    ]
-}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker start &lt;containerid&gt;
+docker attach &lt;containerid&gt; - attach console
 </code></pre></div></div>
+
+<p>Run a command in running container:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it &lt;containerid&gt; /bin/bash
+</code></pre></div></div>
+
+<p>Save changes to an image (from a running container) (create a new image (or tag))</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker commit -m "install stuff" &lt;container name or ID&gt; &lt;new-image-name&gt;[:&lt;tag&gt;]
+</code></pre></div></div>
+
+<p>Run a new container based on a image</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run -v $PWD/docs:/mydocs -p 4000:4000 --name MyUbuntuXenialRepo -it myubuntuxenialimage bash
+</code></pre></div></div>
+
 
   </div>
 
