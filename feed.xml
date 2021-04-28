@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2020-01-26T20:27:36+00:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Some Docker Commands</title><link href="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html" rel="alternate" type="text/html" title="Some Docker Commands" /><published>2018-09-03T00:00:00+00:00</published><updated>2018-09-03T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html">&lt;h2 id=&quot;some-docker-commands&quot;&gt;Some Docker Commands&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2021-04-27T20:36:16-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Test Pyramid</title><link href="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html" rel="alternate" type="text/html" title="Test Pyramid" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid</id><content type="html" xml:base="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html">&lt;h2 id=&quot;some-ideas-around-test-automation&quot;&gt;Some Ideas Around Test Automation&lt;/h2&gt;
+
+&lt;p&gt;The test pyramid idea goes back to:&lt;/p&gt;</content><author><name></name></author><summary type="html">Some Ideas Around Test Automation</summary></entry><entry><title type="html">Some Docker Commands</title><link href="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html" rel="alternate" type="text/html" title="Some Docker Commands" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html">&lt;h2 id=&quot;some-docker-commands&quot;&gt;Some Docker Commands&lt;/h2&gt;
 
 &lt;p&gt;Start a new or exisitng container&lt;/p&gt;
 
@@ -19,7 +21,7 @@ docker attach &amp;lt;containerid&amp;gt; - attach console
 &lt;p&gt;Run a new container based on a image&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run -v $PWD/docs:/mydocs -p 4000:4000 --name MyUbuntuXenialRepo -it myubuntuxenialimage bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Some Docker Commands</summary></entry><entry><title type="html">My custom vim setup</title><link href="https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html" rel="alternate" type="text/html" title="My custom vim setup" /><published>2018-08-01T00:00:00+00:00</published><updated>2018-08-01T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html">&lt;h2 id=&quot;my-custom-vim-setup&quot;&gt;My custom vim setup&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Some Docker Commands</summary></entry><entry><title type="html">My custom vim setup</title><link href="https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html" rel="alternate" type="text/html" title="My custom vim setup" /><published>2018-08-01T00:00:00-05:00</published><updated>2018-08-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html">&lt;h2 id=&quot;my-custom-vim-setup&quot;&gt;My custom vim setup&lt;/h2&gt;
 
 &lt;p&gt;Install tpope’s stuff, its awesome:&lt;/p&gt;
 
@@ -207,7 +209,7 @@ let g:jsdoc_input_description = 1
 let g:jsdoc_return = 0
 let g:jsdoc_return_type = 0
 let g:jsdoc_return_description = 0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">My custom vim setup</summary></entry><entry><title type="html">Testing Cloud Services - Book Notes</title><link href="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html" rel="alternate" type="text/html" title="Testing Cloud Services - Book Notes" /><published>2018-07-01T00:00:00+00:00</published><updated>2018-07-01T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services</id><content type="html" xml:base="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">&lt;h2 id=&quot;testing-cloud-services&quot;&gt;Testing Cloud Services&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">My custom vim setup</summary></entry><entry><title type="html">Testing Cloud Services - Book Notes</title><link href="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html" rel="alternate" type="text/html" title="Testing Cloud Services - Book Notes" /><published>2018-07-01T00:00:00-05:00</published><updated>2018-07-01T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services</id><content type="html" xml:base="https://mode19.github.io/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">&lt;h2 id=&quot;testing-cloud-services&quot;&gt;Testing Cloud Services&lt;/h2&gt;
 
 &lt;p&gt;This book by Kees Blokland, Jeroen Mongerink and Martin Pol - How to test Saas, Paas &amp;amp; Iaas provides a great intro and quick overview of designing a test strategy for the cloud.&lt;/p&gt;
 
@@ -242,163 +244,202 @@ let g:jsdoc_return_description = 0
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This book quickly covers the above areas as a broad sweep of the challenges and benefits encountered when testing in the cloud. Each section as well provides a set of questions to be used as a great starting point for designing test strategies.&lt;/p&gt;</content><author><name></name></author><summary type="html">Testing Cloud Services</summary></entry><entry><title type="html">Test Automation Landscape 2018</title><link href="https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape.html" rel="alternate" type="text/html" title="Test Automation Landscape 2018" /><published>2018-06-21T00:00:00+00:00</published><updated>2018-06-21T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape</id><content type="html" xml:base="https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape.html">&lt;h2 id=&quot;test-automation-landscape-2018&quot;&gt;Test Automation Landscape 2018&lt;/h2&gt;
+&lt;p&gt;This book quickly covers the above areas as a broad sweep of the challenges and benefits encountered when testing in the cloud. Each section as well provides a set of questions to be used as a great starting point for designing test strategies.&lt;/p&gt;</content><author><name></name></author><summary type="html">Testing Cloud Services</summary></entry><entry><title type="html">Aspects of a Test Automation Solution</title><link href="https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape.html" rel="alternate" type="text/html" title="Aspects of a Test Automation Solution" /><published>2018-06-21T00:00:00-05:00</published><updated>2018-06-21T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape</id><content type="html" xml:base="https://mode19.github.io/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape.html">&lt;h2 id=&quot;aspects-of-a-test-automation-solution&quot;&gt;Aspects of a Test Automation Solution&lt;/h2&gt;
 
-&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;720pt&quot; height=&quot;217pt&quot; viewBox=&quot;0.00 0.00 720.00 217.06&quot;&gt;
-&lt;g id=&quot;graph0&quot; class=&quot;graph&quot; transform=&quot;scale(0.422287 0.422287) rotate(0) translate(4 510)&quot;&gt;
+&lt;p&gt;Aspects of test automation solution&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Product Knowledge&lt;/li&gt;
+  &lt;li&gt;Development Backlog&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Graph below:&lt;/p&gt;
+&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;720pt&quot; height=&quot;223pt&quot; viewBox=&quot;0.00 0.00 720.00 223.21&quot;&gt;
+&lt;g id=&quot;graph0&quot; class=&quot;graph&quot; transform=&quot;scale(2.3 2.3) rotate(0) translate(4 510)&quot;&gt;
 &lt;title&gt;architecture&lt;/title&gt;
-&lt;polygon fill=&quot;white&quot; stroke=&quot;none&quot; points=&quot;-4,4 -4,-510 1701,-510 1701,4 -4,4&quot;&gt;&lt;/polygon&gt;
-&lt;g id=&quot;clust1&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterKnowledge&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;320,-412 320,-498 602,-498 602,-412 320,-412&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;461&quot; y=&quot;-482.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Existing Product Knowledge&lt;/text&gt;
+&lt;polygon fill=&quot;white&quot; stroke=&quot;transparent&quot; points=&quot;-4,4 -4,-510 1654,-510 1654,4 -4,4&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;clust1&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterKnowledge&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;320,-412 320,-498 594,-498 594,-412 320,-412&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;457&quot; y=&quot;-482.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Existing Product Knowledge&lt;/text&gt;
 &lt;/g&gt;
-&lt;g id=&quot;clust2&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterDevelopmentBacklog&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;610,-412 610,-498 867,-498 867,-412 610,-412&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;738.5&quot; y=&quot;-482.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;New/Pending Product Knowledge&lt;/text&gt;
+&lt;g id=&quot;clust2&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterDevelopmentBacklog&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;602,-412 602,-498 836,-498 836,-412 602,-412&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;719&quot; y=&quot;-482.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;New/Pending Product Knowledge&lt;/text&gt;
 &lt;/g&gt;
-&lt;g id=&quot;clust3&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterSystemUnderTest&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;557,-102 557,-227 1570,-227 1570,-102 557,-102&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;1063.5&quot; y=&quot;-211.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test&lt;/text&gt;
+&lt;g id=&quot;clust3&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterSystemUnderTest&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;548,-102 548,-227 1508,-227 1508,-102 548,-102&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;1028&quot; y=&quot;-211.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test&lt;/text&gt;
 &lt;/g&gt;
-&lt;g id=&quot;clust4&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterThirdParty&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;1028,-110 1028,-196 1562,-196 1562,-110 1028,-110&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;1295&quot; y=&quot;-180.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Third-party Components&lt;/text&gt;
+&lt;g id=&quot;clust4&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterThirdParty&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;1010,-110 1010,-196 1500,-196 1500,-110 1010,-110&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;1255&quot; y=&quot;-180.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Third-party Components&lt;/text&gt;
 &lt;/g&gt;
-&lt;g id=&quot;clust5&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterTestInfrastructure&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;8,-235 8,-404 1689,-404 1689,-235 8,-235&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;848.5&quot; y=&quot;-388.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Development Infrastructure&lt;/text&gt;
+&lt;g id=&quot;clust5&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterTestInfrastructure&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;8,-235 8,-404 1642,-404 1642,-235 8,-235&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;825&quot; y=&quot;-388.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Development Infrastructure&lt;/text&gt;
 &lt;/g&gt;
-&lt;g id=&quot;clust6&quot; class=&quot;cluster&quot;&gt;&lt;title&gt;clusterProductionSupport&lt;/title&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;416,-8 416,-94 988,-94 988,-8 416,-8&quot;&gt;&lt;/polygon&gt;
-&lt;text text-anchor=&quot;middle&quot; x=&quot;702&quot; y=&quot;-78.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Production Support&lt;/text&gt;
+&lt;g id=&quot;clust6&quot; class=&quot;cluster&quot;&gt;
+&lt;title&gt;clusterProductionSupport&lt;/title&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; points=&quot;425,-8 425,-94 967,-94 967,-8 425,-8&quot;&gt;&lt;/polygon&gt;
+&lt;text text-anchor=&quot;middle&quot; x=&quot;696&quot; y=&quot;-78.8&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Production Support&lt;/text&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node1&quot; class=&quot;node&quot;&gt;&lt;title&gt;SystemUnderTestKnowledge&lt;/title&gt;
+&lt;g id=&quot;node1&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;SystemUnderTestKnowledge&lt;/title&gt;
 &lt;text text-anchor=&quot;start&quot; x=&quot;348&quot; y=&quot;-439.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test (Knowledge)&lt;/text&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; d=&quot;M349,-425C349,-425 573,-425 573,-425 579,-425 585,-431 585,-437 585,-437 585,-450 585,-450 585,-456 579,-462 573,-462 573,-462 349,-462 349,-462 343,-462 337,-456 337,-450 337,-450 337,-437 337,-437 337,-431 343,-425 349,-425&quot;&gt;&lt;/path&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; d=&quot;M349,-425C349,-425 565,-425 565,-425 571,-425 577,-431 577,-437 577,-437 577,-450 577,-450 577,-456 571,-462 565,-462 565,-462 349,-462 349,-462 343,-462 337,-456 337,-450 337,-450 337,-437 337,-437 337,-431 343,-425 349,-425&quot;&gt;&lt;/path&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node13&quot; class=&quot;node&quot;&gt;&lt;title&gt;TestCaseRepo&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;519&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestCaseRepository&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;507.5,-331 507.5,-368 672.5,-368 672.5,-331 507.5,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node13&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;TestCaseRepo&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;514&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestCaseRepository&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;503,-331 503,-368 661,-368 661,-331 503,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge2&quot; class=&quot;edge&quot;&gt;&lt;title&gt;SystemUnderTestKnowledge-&amp;gt;TestCaseRepo&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M492.557,-419.994C509.892,-407.631 531.567,-392.173 550.07,-378.977&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;552.212,-381.748 558.322,-373.092 548.148,-376.049 552.212,-381.748&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge2&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;SystemUnderTestKnowledge-&amp;gt;TestCaseRepo&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M487.58,-419.99C504.22,-407.74 525,-392.45 542.82,-379.33&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;545.32,-381.84 551.3,-373.09 541.18,-376.2 545.32,-381.84&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node2&quot; class=&quot;node&quot;&gt;&lt;title&gt;DevelopmentBacklog&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;638&quot; y=&quot;-439.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Development Back log&lt;/text&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; d=&quot;M639,-425C639,-425 799,-425 799,-425 805,-425 811,-431 811,-437 811,-437 811,-450 811,-450 811,-456 805,-462 799,-462 799,-462 639,-462 639,-462 633,-462 627,-456 627,-450 627,-450 627,-437 627,-437 627,-431 633,-425 639,-425&quot;&gt;&lt;/path&gt;
+&lt;g id=&quot;node2&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;DevelopmentBacklog&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;631&quot; y=&quot;-439.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Development Back log&lt;/text&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; d=&quot;M631.5,-425C631.5,-425 780.5,-425 780.5,-425 786.5,-425 792.5,-431 792.5,-437 792.5,-437 792.5,-450 792.5,-450 792.5,-456 786.5,-462 780.5,-462 780.5,-462 631.5,-462 631.5,-462 625.5,-462 619.5,-456 619.5,-450 619.5,-450 619.5,-437 619.5,-437 619.5,-431 625.5,-425 631.5,-425&quot;&gt;&lt;/path&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge1&quot; class=&quot;edge&quot;&gt;&lt;title&gt;DevelopmentBacklog-&amp;gt;TestCaseRepo&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M687.443,-419.994C670.108,-407.631 648.433,-392.173 629.93,-378.977&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;631.852,-376.049 621.678,-373.092 627.788,-381.748 631.852,-376.049&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge1&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;DevelopmentBacklog-&amp;gt;TestCaseRepo&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M675.67,-419.99C659.15,-407.74 638.54,-392.45 620.86,-379.33&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;622.57,-376.24 612.45,-373.09 618.4,-381.86 622.57,-376.24&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node3&quot; class=&quot;node&quot;&gt;&lt;title&gt;SystemUnderTestWeb&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;816&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test (WEB)&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;804.5,-123 804.5,-160 1009.5,-160 1009.5,-123 804.5,-123&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node3&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;SystemUnderTestWeb&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;807&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test (WEB)&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;795.5,-123 795.5,-160 990.5,-160 990.5,-123 795.5,-123&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node4&quot; class=&quot;node&quot;&gt;&lt;title&gt;SystemUnderTestApi&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;585&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test (API)&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;573.5,-123 573.5,-160 768.5,-160 768.5,-123 573.5,-123&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node4&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;SystemUnderTestApi&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;576&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;System-under-test (API)&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;564.5,-123 564.5,-160 759.5,-160 759.5,-123 564.5,-123&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node14&quot; class=&quot;node&quot;&gt;&lt;title&gt;TestResultsRepo&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;720&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestResultsRepository(Auto)&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;708.5,-331 708.5,-368 935.5,-368 935.5,-331 708.5,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node14&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;TestResultsRepo&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;709&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestResultsRepository(Auto)&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;697.5,-331 697.5,-368 922.5,-368 922.5,-331 697.5,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge5&quot; class=&quot;edge&quot;&gt;&lt;title&gt;SystemUnderTestApi-&amp;gt;TestResultsRepo&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M687.581,-165.121C714.706,-202.125 768.607,-275.66 799.273,-317.495&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;796.529,-319.671 805.263,-325.667 802.174,-315.533 796.529,-319.671&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge5&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;SystemUnderTestApi-&amp;gt;TestResultsRepo&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M678.25,-165.12C704.84,-202.13 757.67,-275.66 787.72,-317.49&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;784.92,-319.59 793.6,-325.67 790.6,-315.5 784.92,-319.59&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node18&quot; class=&quot;node&quot;&gt;&lt;title&gt;LogAggregator&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;614&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Log Aggregator&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;603,-21 603,-58 739,-58 739,-21 603,-21&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node18&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;LogAggregator&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;609&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Log Aggregator&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;598,-21 598,-58 726,-58 726,-21 598,-21&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge6&quot; class=&quot;edge&quot;&gt;&lt;title&gt;SystemUnderTestApi-&amp;gt;LogAggregator&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M671,-117.808C671,-104.639 671,-87.8242 671,-73.2415&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;674.5,-73.1017 671,-63.1017 667.5,-73.1018 674.5,-73.1017&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge6&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;SystemUnderTestApi-&amp;gt;LogAggregator&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M662,-117.81C662,-104.64 662,-87.82 662,-73.24&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;665.5,-73.1 662,-63.1 658.5,-73.1 665.5,-73.1&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node5&quot; class=&quot;node&quot;&gt;&lt;title&gt;CoreDownstream&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1408&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;CoreDownstream&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1397,-123 1397,-160 1545,-160 1545,-123 1397,-123&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node5&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;CoreDownstream&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1366&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;CoreDownstream&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1355,-123 1355,-160 1483,-160 1483,-123 1355,-123&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node6&quot; class=&quot;node&quot;&gt;&lt;title&gt;PartnerSystemA&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1232&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;PartnerSystemA&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1221,-123 1221,-160 1361,-160 1361,-123 1221,-123&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node6&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;PartnerSystemA&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1202&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;PartnerSystemA&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1191,-123 1191,-160 1319,-160 1319,-123 1191,-123&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node7&quot; class=&quot;node&quot;&gt;&lt;title&gt;PartnerSystemB&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1056&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;PartnerSystemB&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1045,-123 1045,-160 1185,-160 1185,-123 1045,-123&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node7&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;PartnerSystemB&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1038&quot; y=&quot;-137.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;PartnerSystemB&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1027,-123 1027,-160 1155,-160 1155,-123 1027,-123&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node8&quot; class=&quot;node&quot;&gt;&lt;title&gt;SourceCodeRepo&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1505&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;SourceCodeRepositor&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1494,-331 1494,-368 1672,-368 1672,-331 1494,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node8&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;SourceCodeRepo&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1471&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;SourceCodeRepositor&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1459.5,-331 1459.5,-368 1624.5,-368 1624.5,-331 1459.5,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node9&quot; class=&quot;node&quot;&gt;&lt;title&gt;CICDPipeLine&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1339&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;CICD-PipeLine&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1328,-331 1328,-368 1458,-368 1458,-331 1328,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node9&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;CICDPipeLine&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1314&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;CICD-PipeLine&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1303,-331 1303,-368 1423,-368 1423,-331 1303,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node10&quot; class=&quot;node&quot;&gt;&lt;title&gt;WebTestSuite&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;1183&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;WebTestSuite&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1172,-331 1172,-368 1292,-368 1292,-331 1172,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node10&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;WebTestSuite&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;1165&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;WebTestSuite&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;1153.5,-331 1153.5,-368 1266.5,-368 1266.5,-331 1153.5,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node11&quot; class=&quot;node&quot;&gt;&lt;title&gt;ApiTestSuite&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;579&quot; y=&quot;-262.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;ApiTestSuite&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;567.5,-248 567.5,-285 680.5,-285 680.5,-248 567.5,-248&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node11&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;ApiTestSuite&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;570&quot; y=&quot;-262.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;ApiTestSuite&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;558.5,-248 558.5,-285 671.5,-285 671.5,-248 558.5,-248&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge4&quot; class=&quot;edge&quot;&gt;&lt;title&gt;ApiTestSuite-&amp;gt;SystemUnderTestApi&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M632.621,-242.94C639.929,-223.815 650.498,-196.154 658.696,-174.701&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;661.975,-175.924 662.275,-165.334 655.436,-173.426 661.975,-175.924&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge4&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;ApiTestSuite-&amp;gt;SystemUnderTestApi&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M623.62,-242.94C630.93,-223.81 641.5,-196.15 649.7,-174.7&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;652.97,-175.92 653.27,-165.33 646.44,-173.43 652.97,-175.92&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node12&quot; class=&quot;node&quot;&gt;&lt;title&gt;TestDataRepo&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;983&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestDataRepository&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;972,-331 972,-368 1136,-368 1136,-331 972,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node12&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;TestDataRepo&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;970&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestDataRepository&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;959,-331 959,-368 1117,-368 1117,-331 959,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;edge3&quot; class=&quot;edge&quot;&gt;&lt;title&gt;TestCaseRepo-&amp;gt;ApiTestSuite&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M599.471,-325.937C602.905,-317.755 606.853,-308.35 610.564,-299.509&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;613.819,-300.798 614.462,-290.223 607.364,-298.089 613.819,-300.798&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;edge3&quot; class=&quot;edge&quot;&gt;
+&lt;title&gt;TestCaseRepo-&amp;gt;ApiTestSuite&lt;/title&gt;
+&lt;path fill=&quot;none&quot; stroke=&quot;black&quot; d=&quot;M591.19,-325.94C594.53,-317.76 598.36,-308.35 601.96,-299.51&quot;&gt;&lt;/path&gt;
+&lt;polygon fill=&quot;black&quot; stroke=&quot;black&quot; points=&quot;605.21,-300.8 605.74,-290.22 598.73,-298.16 605.21,-300.8&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node15&quot; class=&quot;node&quot;&gt;&lt;title&gt;TestResultsRepoManual&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;192&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestResultsRepository(Manual Tests)&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;181,-331 181,-368 471,-368 471,-331 181,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node15&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;TestResultsRepoManual&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;193&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;TestResultsRepository(Manual Tests)&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;181.5,-331 181.5,-368 466.5,-368 466.5,-331 181.5,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node16&quot; class=&quot;node&quot;&gt;&lt;title&gt;TestIssueTracker&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;37&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Issue-tracker&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;25.5,-331 25.5,-368 144.5,-368 144.5,-331 25.5,-331&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node16&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;TestIssueTracker&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;36&quot; y=&quot;-345.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;Issue-tracker&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;25,-331 25,-368 145,-368 145,-331 25,-331&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node17&quot; class=&quot;node&quot;&gt;&lt;title&gt;ProductionIssueTracker&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;786&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;ProductionIssueTracker&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;775,-21 775,-58 971,-58 971,-21 775,-21&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node17&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;ProductionIssueTracker&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;773&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;ProductionIssueTracker&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;762,-21 762,-58 950,-58 950,-21 762,-21&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 
-&lt;g id=&quot;node19&quot; class=&quot;node&quot;&gt;&lt;title&gt;UptimeMonitor&lt;/title&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;445&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;UptimeMonitor&lt;/text&gt;
-&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;433.5,-21 433.5,-58 566.5,-58 566.5,-21 433.5,-21&quot;&gt;&lt;/polygon&gt;
+&lt;g id=&quot;node19&quot; class=&quot;node&quot;&gt;
+&lt;title&gt;UptimeMonitor&lt;/title&gt;
+&lt;text text-anchor=&quot;start&quot; x=&quot;453&quot; y=&quot;-35.3&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot;&gt;UptimeMonitor&lt;/text&gt;
+&lt;polygon fill=&quot;none&quot; stroke=&quot;black&quot; stroke-width=&quot;2&quot; points=&quot;442,-21 442,-58 562,-58 562,-21 442,-21&quot;&gt;&lt;/polygon&gt;
 &lt;/g&gt;
 &lt;/g&gt;
-&lt;/svg&gt;</content><author><name></name></author><summary type="html">Test Automation Landscape 2018</summary></entry><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2018-03-02T00:00:00+00:00</published><updated>2018-03-02T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/svg&gt;</content><author><name></name></author><summary type="html">Aspects of a Test Automation Solution</summary></entry><entry><title type="html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html" rel="alternate" type="text/html" title="Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk" /><published>2018-03-02T00:00:00-06:00</published><updated>2018-03-02T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files.
   Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance.
 Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.&lt;/p&gt;
@@ -514,7 +555,7 @@ sum     count   average medium  min     max
 
 &lt;h2 id=&quot;conclusion-and-next-steps&quot;&gt;Conclusion and Next Steps&lt;/h2&gt;
 
-&lt;p&gt;Using these techniques we can analyze large log files to search for specific values or events. These techniques can work when querying a single file or combining multiple files together. Also, since these techniques are done on the command-line they can be easily scripts and repeated or executed in an automated fashion.  With a few basic scrips one can develop sophisticated techniques for measuring software metrics. Check back for future articles on how to take these metrics and seamlessly create graphs using the gnuplot command-line utility.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files. Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance. Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.</summary></entry><entry><title type="html">Quick and Dirty Software Metrics using Awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html" rel="alternate" type="text/html" title="Quick and Dirty Software Metrics using Awk" /><published>2018-03-01T00:00:00+00:00</published><updated>2018-03-01T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Using these techniques we can analyze large log files to search for specific values or events. These techniques can work when querying a single file or combining multiple files together. Also, since these techniques are done on the command-line they can be easily scripts and repeated or executed in an automated fashion.  With a few basic scrips one can develop sophisticated techniques for measuring software metrics. Check back for future articles on how to take these metrics and seamlessly create graphs using the gnuplot command-line utility.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction When troubleshooting software we usually don’t have all the required information in one place. Often we only have command-line access to low level application and system log files. Command line tools such as tail, cat, grep etc. can be combined to provide basic insights into application performance. Lets look at some examples of how to use standard UNIX command-line tools to analyze application log files.</summary></entry><entry><title type="html">Quick and Dirty Software Metrics using Awk</title><link href="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html" rel="alternate" type="text/html" title="Quick and Dirty Software Metrics using Awk" /><published>2018-03-01T00:00:00-06:00</published><updated>2018-03-01T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk</id><content type="html" xml:base="https://mode19.github.io/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together data from different sources and using only command-line access. The UNIX command line has lots of great text processing utilities such as cat, tail, grep, awk etc, however, numerical analysis can be challenging on the command-line.
   In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.&lt;/p&gt;
 
@@ -666,7 +707,7 @@ The regular expression ^[0-9]&lt;em&gt;(.[0-9]&lt;/em&gt;)?$ will match all numb
 &lt;p&gt;The END section is executed after all input records have been processed. After processing each record we have an array called ‘a’ which contains every number encountered on the input. Since the first command in the script (before invoking awk) is &lt;a href=&quot;https://en.wikipedia.org/wiki/Sort_(Unix)&quot;&gt;sort&lt;/a&gt; we know the array is ordered, which makes finding the min and max as simple as grabbing the first and last item of the array.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion-and-next-steps&quot;&gt;Conclusion and Next Steps&lt;/h2&gt;
-&lt;p&gt;Using the above awk script we can quickly analyze numeric values on the command line. Also, we can incorporate basic performance metrics into automated scripts.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together data from different sources and using only command-line access. The UNIX command line has lots of great text processing utilities such as cat, tail, grep, awk etc, however, numerical analysis can be challenging on the command-line. In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.</summary></entry><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00+00:00</published><updated>2018-01-09T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
+&lt;p&gt;Using the above awk script we can quickly analyze numeric values on the command line. Also, we can incorporate basic performance metrics into automated scripts.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction When troubleshooting software we don’t often have the luxury of a metrics dashboard or a monitoring system. Frequently we are patching together data from different sources and using only command-line access. The UNIX command line has lots of great text processing utilities such as cat, tail, grep, awk etc, however, numerical analysis can be challenging on the command-line. In this example we show how to calculate basic metrics such as average/median/minimum and maximum using an awk script.</summary></entry><entry><title type="html">VIM Quick Tip: The Global Command</title><link href="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html" rel="alternate" type="text/html" title="VIM Quick Tip: The Global Command" /><published>2018-01-09T00:00:00-06:00</published><updated>2018-01-09T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim/2018/01/09/vim-global-commmand.html">&lt;p&gt;For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.&lt;/p&gt;
 
 &lt;p&gt;To see the formal help page enter the following into vim:&lt;/p&gt;
 
@@ -718,7 +759,7 @@ grapefruit3
 grapefruit4
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Using more complex patterns can make this command invaluable when cleaning up data files.&lt;/p&gt;</content><author><name></name></author><summary type="html">For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.</summary></entry><entry><title type="html">JavaScript Quick Tip: Stringifying an Object with Indentation</title><link href="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html" rel="alternate" type="text/html" title="JavaScript Quick Tip: Stringifying an Object with Indentation" /><published>2018-01-09T00:00:00+00:00</published><updated>2018-01-09T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting</id><content type="html" xml:base="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">&lt;p&gt;In JavaScript the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&quot;&gt;JSON.stringify&lt;/a&gt; method provides a way of converting a JavaScript object to a string.  This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.&lt;/p&gt;
+&lt;p&gt;Using more complex patterns can make this command invaluable when cleaning up data files.&lt;/p&gt;</content><author><name></name></author><summary type="html">For vim users, one of the most useful commands to know is the global command. The global command applies an operation to all lines which match (or do not match) a specified pattern.</summary></entry><entry><title type="html">JavaScript Quick Tip: Stringifying an Object with Indentation</title><link href="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html" rel="alternate" type="text/html" title="JavaScript Quick Tip: Stringifying an Object with Indentation" /><published>2018-01-09T00:00:00-06:00</published><updated>2018-01-09T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting</id><content type="html" xml:base="https://mode19.github.io/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">&lt;p&gt;In JavaScript the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&quot;&gt;JSON.stringify&lt;/a&gt; method provides a way of converting a JavaScript object to a string.  This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.&lt;/p&gt;
 
 &lt;p&gt;For example, take the following JavaScript object:&lt;/p&gt;
 
@@ -747,7 +788,7 @@ grapefruit4
         }
     ]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.</summary></entry><entry><title type="html">Manage your News Feeds with Newsbeuter and DigitalOcean</title><link href="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html" rel="alternate" type="text/html" title="Manage your News Feeds with Newsbeuter and DigitalOcean" /><published>2017-11-14T00:00:00+00:00</published><updated>2017-11-14T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean</id><content type="html" xml:base="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.</summary></entry><entry><title type="html">Manage your News Feeds with Newsbeuter and DigitalOcean</title><link href="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html" rel="alternate" type="text/html" title="Manage your News Feeds with Newsbeuter and DigitalOcean" /><published>2017-11-14T00:00:00-06:00</published><updated>2017-11-14T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean</id><content type="html" xml:base="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In this modern age we have unprecedented access to information through the internet.  The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_feed&quot;&gt;Web Feeds&lt;/a&gt; and news reader software in order to organize your information and save you time.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-are-rss-atom-and-newsbeuter&quot;&gt;What are RSS, Atom and Newsbeuter?&lt;/h3&gt;
@@ -1001,130 +1042,4 @@ define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt;
   &lt;li&gt;Websites like reddit, monster.com, craigslist etc etc&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry><entry><title type="html">Welcome to the Blog</title><link href="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html" rel="alternate" type="text/html" title="Welcome to the Blog" /><published>2017-01-01T00:00:00+00:00</published><updated>2017-01-01T00:00:00+00:00</updated><id>https://mode19.github.io/humanreadable/admin/2017/01/01/welcome</id><content type="html" xml:base="https://mode19.github.io/humanreadable/admin/2017/01/01/welcome.html">&lt;p&gt;I believe it was Albert Einstein that said: “If you’re not learning you’re dying”.  Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.&lt;/p&gt;
-
-&lt;p&gt;As a software developer I am constantly exploring new technologies and tinkering with a wide variety of tools. This blog is intended to share some of those ideas and learnings.&lt;/p&gt;
-
-&lt;p&gt;Some ideas for topics I may tackle in the future:&lt;/p&gt;
-
-&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;653pt&quot; height=&quot;166pt&quot; viewBox=&quot;0.00 0.00 653.28 165.62&quot;&gt;
-&lt;g id=&quot;graph0&quot; class=&quot;graph&quot; transform=&quot;scale(1 1) rotate(0) translate(4 161.6224)&quot;&gt;
-&lt;title&gt;ideas&lt;/title&gt;
-&lt;polygon fill=&quot;#ffffff&quot; stroke=&quot;transparent&quot; points=&quot;-4,4 -4,-161.6224 649.2792,-161.6224 649.2792,4 -4,4&quot;&gt;&lt;/polygon&gt;
-
-&lt;g id=&quot;node1&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Ideas&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;307.8112&quot; cy=&quot;-127.2168&quot; rx=&quot;53.9813&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;287.8112&quot; y=&quot;-123.0168&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Ideas&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node2&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Design&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;60.8112&quot; cy=&quot;-30.4056&quot; rx=&quot;60.623&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;35.8112&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Design&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge1&quot; class=&quot;edge&quot;&gt;
-&lt;title&gt;Ideas-&amp;gt;Design&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; d=&quot;M262.1707,-111.0152C226.0445,-97.9929 174.4223,-78.944 129.8112,-60.8112 125.1555,-58.9188 120.3444,-56.9102 115.5293,-54.8628&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;#000000&quot; stroke=&quot;#000000&quot; points=&quot;116.8737,-51.6311 106.3042,-50.8981 114.1096,-58.0623 116.8737,-51.6311&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node3&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Code&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;190.8112&quot; cy=&quot;-30.4056&quot; rx=&quot;51.7379&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;172.8112&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Code&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge2&quot; class=&quot;edge&quot;&gt;
-&lt;title&gt;Ideas-&amp;gt;Code&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; d=&quot;M277.3762,-102.0335C262.6159,-89.8201 244.7315,-75.0218 229.0594,-62.0539&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;#000000&quot; stroke=&quot;#000000&quot; points=&quot;231.0295,-59.1413 221.0937,-55.4628 226.567,-64.5344 231.0295,-59.1413&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node4&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Test&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;307.8112&quot; cy=&quot;-30.4056&quot; rx=&quot;47.2526&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;292.8112&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Test&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge3&quot; class=&quot;edge&quot;&gt;
-&lt;title&gt;Ideas-&amp;gt;Test&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; d=&quot;M307.8112,-96.5851C307.8112,-88.4722 307.8112,-79.5858 307.8112,-71.0321&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;#000000&quot; stroke=&quot;#000000&quot; points=&quot;311.3113,-70.838 307.8112,-60.838 304.3113,-70.838 311.3113,-70.838&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node5&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Deploy&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;433.8112&quot; cy=&quot;-30.4056&quot; rx=&quot;60.623&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;408.8112&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Deploy&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge4&quot; class=&quot;edge&quot;&gt;
-&lt;title&gt;Ideas-&amp;gt;Deploy&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; d=&quot;M339.9323,-102.5367C355.8475,-90.3084 375.2557,-75.3963 392.2857,-62.3114&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;#000000&quot; stroke=&quot;#000000&quot; points=&quot;394.632,-64.9225 400.4292,-56.0544 390.3671,-59.3717 394.632,-64.9225&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;node6&quot; class=&quot;node&quot;&gt;
-&lt;title&gt;Monitor&lt;/title&gt;
-&lt;ellipse fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;578.8112&quot; cy=&quot;-30.4056&quot; rx=&quot;66.4361&quot; ry=&quot;30.3115&quot;&gt;&lt;/ellipse&gt;
-&lt;text text-anchor=&quot;start&quot; x=&quot;549.8112&quot; y=&quot;-26.2056&quot; font-family=&quot;Times,serif&quot; font-size=&quot;14.00&quot; fill=&quot;#000000&quot;&gt;Monitor&lt;/text&gt;
-&lt;/g&gt;
-
-&lt;g id=&quot;edge5&quot; class=&quot;edge&quot;&gt;
-&lt;title&gt;Ideas-&amp;gt;Monitor&lt;/title&gt;
-&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; d=&quot;M354.8127,-112.1483C394.6879,-99.1605 453.297,-79.5895 503.8112,-60.8112 508.9967,-58.8835 514.3614,-56.8295 519.7274,-54.7336&quot;&gt;&lt;/path&gt;
-&lt;polygon fill=&quot;#000000&quot; stroke=&quot;#000000&quot; points=&quot;521.3337,-57.8624 529.3493,-50.9341 518.7626,-51.3516 521.3337,-57.8624&quot;&gt;&lt;/polygon&gt;
-&lt;/g&gt;
-&lt;/g&gt;
-&lt;/svg&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Design
-    &lt;ul&gt;
-      &lt;li&gt;Introduction to UML Diagrams&lt;/li&gt;
-      &lt;li&gt;Generating UML diagrams from Code&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Code
-    &lt;ul&gt;
-      &lt;li&gt;Using Jetty Servlet Container: Embedded v.s Stand-alone&lt;/li&gt;
-      &lt;li&gt;Eclipse Che project - Coding in the Cloud&lt;/li&gt;
-      &lt;li&gt;Using VIM as a Node.js/JavaScript IDE&lt;/li&gt;
-      &lt;li&gt;Maintaining Data Integrity with JSON Schema&lt;/li&gt;
-      &lt;li&gt;Introduction to Json Path&lt;/li&gt;
-      &lt;li&gt;The Zen of XML Transformations: XSLT and Xpath Basics&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Test
-    &lt;ul&gt;
-      &lt;li&gt;Automated Web Interface Testing with Selenium Java API&lt;/li&gt;
-      &lt;li&gt;Load testing with Jmeter on DigitalOcean&lt;/li&gt;
-      &lt;li&gt;Using Selenium with Node.js: Webdriver.io Project&lt;/li&gt;
-      &lt;li&gt;Load testing with Python and locust.io on DigitalOcean&lt;/li&gt;
-      &lt;li&gt;Automated Testing of JSON Web Services using Rest-Assured&lt;/li&gt;
-      &lt;li&gt;Recording and Playing-back Data: Introduction to Wiremock Server&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Deploy
-    &lt;ul&gt;
-      &lt;li&gt;Introduction to Running Hyper-SQL Database Server&lt;/li&gt;
-      &lt;li&gt;Implementing CICD (Continuous Integration and Continuous Deployment)&lt;/li&gt;
-      &lt;li&gt;Generating Test Reports using Jenkins&lt;/li&gt;
-      &lt;li&gt;Introduction to Docker&lt;/li&gt;
-      &lt;li&gt;MongoDB Basics&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Monitor
-    &lt;ul&gt;
-      &lt;li&gt;Linux Performance Monitoring&lt;/li&gt;
-      &lt;li&gt;Monitor Java JVM Memory with JMX and Jconsole&lt;/li&gt;
-      &lt;li&gt;Creating Graphs on the Command-line using Gnuplot&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I hope to provide concise, useful and interesting articles on these and other topics.&lt;/p&gt;
-
-&lt;p&gt;Welcome to the blog and please check back soon for more articles!&lt;/p&gt;</content><author><name></name></author><summary type="html">I believe it was Albert Einstein that said: “If you’re not learning you’re dying”. Thruthfully, this quote and attribution come to me via pinterest but regardless of the source, the idea rings true to me. The mental state of learning is not something to turn to periodically when life requires it but rather a process that is part of life itself.</summary></entry></feed>
+&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry></feed>
