@@ -1,13 +1,18 @@
 ---
 layout: post
-title:  "Test Automation Landscape 2018"
+title:  "Aspects of a Test Automation Solution"
 date:   2018-06-21
 categories: graphviz
 ---
 
-## Test Automation Landscape 2018
+## Aspects of a Test Automation Solution
 
+Aspects of test automation solution
 
+* Product Knowledge
+* Development Backlog
+
+Graph below:
 {% dot %}
     digraph architecture {
 		node [shape=none]
