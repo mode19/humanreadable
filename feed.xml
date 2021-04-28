@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2021-04-27T20:36:16-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Test Pyramid</title><link href="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html" rel="alternate" type="text/html" title="Test Pyramid" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid</id><content type="html" xml:base="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html">&lt;h2 id=&quot;some-ideas-around-test-automation&quot;&gt;Some Ideas Around Test Automation&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://mode19.github.io/humanreadable/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mode19.github.io/humanreadable/" rel="alternate" type="text/html" /><updated>2021-04-27T21:03:24-05:00</updated><id>https://mode19.github.io/humanreadable/</id><title type="html">HumanReadable Blog</title><subtitle>Computers, Linux, open-source, programming, technology and related articles</subtitle><entry><title type="html">Tmux</title><link href="https://mode19.github.io/humanreadable/unix,tmux/2018/09/03/Tmux.html" rel="alternate" type="text/html" title="Tmux" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/unix,tmux/2018/09/03/Tmux</id><content type="html" xml:base="https://mode19.github.io/humanreadable/unix,tmux/2018/09/03/Tmux.html">&lt;h2 id=&quot;tmux&quot;&gt;Tmux&lt;/h2&gt;
+
+&lt;p&gt;Sample tmux rc:&lt;/p&gt;
+
+&lt;p&gt;~/.tmux.conf&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# remap prefix to Control + a
+set -g prefix C-a
+# bind 'C-a C-a' to type 'C-a'
+bind C-a send-prefix
+unbind C-b
+
+set-window-option -g mode-keys vi
+set-option -g history-limit 10000
+
+is_vim=&quot;ps -o state= -o comm= -t '#{pane_tty}' \
+    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'&quot;
+
+#bind-key -n C-h if-shell &quot;$is_vim&quot; &quot;send-keys C-h&quot;  &quot;select-pane -L&quot;
+#bind-key -n C-j if-shell &quot;$is_vim&quot; &quot;send-keys C-j&quot;  &quot;select-pane -D&quot;
+#bind-key -n C-k if-shell &quot;$is_vim&quot; &quot;send-keys C-k&quot;  &quot;select-pane -U&quot;
+#bind-key -n C-l if-shell &quot;$is_vim&quot; &quot;send-keys C-l&quot;  &quot;select-pane -R&quot;
+#bind-key -n C-\ if-shell &quot;$is_vim&quot; &quot;send-keys C-\\&quot; &quot;select-pane -l&quot;
+
+
+bind | split-window -h -c &quot;#{pane_current_path}&quot;
+bind - split-window -v -c &quot;#{pane_current_path}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Tmux</summary></entry><entry><title type="html">Test Pyramid</title><link href="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html" rel="alternate" type="text/html" title="Test Pyramid" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid</id><content type="html" xml:base="https://mode19.github.io/humanreadable/test-automation/2018/09/03/Test-Pyramid.html">&lt;h2 id=&quot;some-ideas-around-test-automation&quot;&gt;Some Ideas Around Test Automation&lt;/h2&gt;
 
 &lt;p&gt;The test pyramid idea goes back to:&lt;/p&gt;</content><author><name></name></author><summary type="html">Some Ideas Around Test Automation</summary></entry><entry><title type="html">Some Docker Commands</title><link href="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html" rel="alternate" type="text/html" title="Some Docker Commands" /><published>2018-09-03T00:00:00-05:00</published><updated>2018-09-03T00:00:00-05:00</updated><id>https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands</id><content type="html" xml:base="https://mode19.github.io/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html">&lt;h2 id=&quot;some-docker-commands&quot;&gt;Some Docker Commands&lt;/h2&gt;
 
@@ -788,258 +815,4 @@ grapefruit4
         }
     ]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.</summary></entry><entry><title type="html">Manage your News Feeds with Newsbeuter and DigitalOcean</title><link href="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html" rel="alternate" type="text/html" title="Manage your News Feeds with Newsbeuter and DigitalOcean" /><published>2017-11-14T00:00:00-06:00</published><updated>2017-11-14T00:00:00-06:00</updated><id>https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean</id><content type="html" xml:base="https://mode19.github.io/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;In this modern age we have unprecedented access to information through the internet.  The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_feed&quot;&gt;Web Feeds&lt;/a&gt; and news reader software in order to organize your information and save you time.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-rss-atom-and-newsbeuter&quot;&gt;What are RSS, Atom and Newsbeuter?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/RSS&quot;&gt;RSS (Really Simple Syndication)&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Atom&quot;&gt;Atom&lt;/a&gt; are types of web feeds that allow content publishers such as websites, blogs, podcasts etc to announce to the world when new items are available. News readers are software programs that can read these syndication formats from a bunch of websites and present the results to the user much like an e-mail program.&lt;/p&gt;
-
-&lt;p&gt;There are many news reading tools &lt;a href=&quot;https://en.wikipedia.org/wiki/News_aggregator&quot;&gt;available&lt;/a&gt;. This tutorial introduces you to &lt;a href=&quot;https://newsbeuter.org/&quot;&gt;Newsbeuter&lt;/a&gt;, a UNIX based console program.
-Why Newsbeuter?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simple text-based interface&lt;/li&gt;
-  &lt;li&gt;Remotely and Securely accessible (through ssh)&lt;/li&gt;
-  &lt;li&gt;No distracting images and ads&lt;/li&gt;
-  &lt;li&gt;Tagging and filtering content&lt;/li&gt;
-  &lt;li&gt;Query Feeds - (simplifies content into single feeds)&lt;/li&gt;
-  &lt;li&gt;Open-source license &lt;a href=&quot;https://github.com/akrennmair/newsbeuter/blob/master/LICENSE&quot;&gt;github: akrennmair/newsbeuter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We will walk through the process of installing and configuring Newsbeuter and by the end of the tutorial you should have an understanding of each of these features and how they can help you take back control of your news feeds.&lt;/p&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-
-&lt;p&gt;To perform the steps in this guide, you will need the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ability to use the Unix command line to issue commands and create as well as edit files&lt;/li&gt;
-  &lt;li&gt;A Ubuntu server install such as one from DigitalOcean because they have great tutorials such as &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04&quot;&gt;How to setup a Ubuntu server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;step-1-installing-newsbeuter&quot;&gt;Step 1: Installing Newsbeuter&lt;/h3&gt;
-&lt;p&gt;Lets begin! At the &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_installation&quot;&gt;Newsbeuter website&lt;/a&gt; you will find detailed instructions for installing and configuring the software. Luckily, Ubuntu rocks, and often has a package ready for us to use, so the easiest way to get started is often to log into your server and search the package manager for Newsbeuter by entering the following command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ apt-cache search newsbeuter
-newsbeuter - text mode rss feed reader with podcast support&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Yes, it’s there, so lets install it:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get install newsbeuter
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Follow the prompts of the install and when it completes you should be able to run Newsbeuter as follows:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ newsbeuter
-XDG: configuration directory '/home/webadmin/.config/newsbeuter' not accessible, using '/home/webadmin/.newsbeuter' instead.
-Starting newsbeuter 2.7...
-Loading configuration...done.
-Opening cache...done.
-Loading URLs from /home/webadmin/.newsbeuter/urls...done.
-Error: no URLs configured. Please fill the file /home/webadmin/.newsbeuter/urls with RSS feed URLs or import an OPML file.
-
-newsbeuter 2.7
-usage: newsbeuter [-i &amp;lt;file&amp;gt;|-e] [-u &amp;lt;urlfile&amp;gt;] [-c &amp;lt;cachefile&amp;gt;] [-x &amp;lt;command&amp;gt;&amp;lt;/command&amp;gt; ...] [-h]
-        -e              export OPML feed to stdout
-        -r              refresh feeds on start
-        -i &amp;lt;file&amp;gt;       import OPML file
-        -u &amp;lt;urlfile&amp;gt;    read RSS feed URLs from &amp;lt;urlfile&amp;gt;
-        -c &amp;lt;cachefile&amp;gt;  use &amp;lt;cachefile&amp;gt; as cache file
-        -C &amp;lt;configfile&amp;gt; read configuration from &amp;lt;configfile&amp;gt;
-        -X              clean up cache thoroughly
-        -x &amp;lt;command&amp;gt;&amp;lt;/command&amp;gt;... execute list of commands
-        -o              activate offline mode (only applies to Google Reader synchronization mode)
-        -q              quiet startup
-        -v              get version information
-        -l &amp;lt;loglevel&amp;gt;   write a log with a certain loglevel (valid values: 1 to 6)
-        -d &amp;lt;logfile&amp;gt;    use &amp;lt;logfile&amp;gt; as output log file
-        -E &amp;lt;file&amp;gt;       export list of read articles to &amp;lt;file&amp;gt;
-        -I &amp;lt;file&amp;gt;       import list of read articles from &amp;lt;file&amp;gt;
-        -h              this help
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The error message above explains exactly why Newsbeuter was unable to start, and then prints out the usage message. As we can see, we haven’t added any web links or &lt;a href=&quot;https://en.wikipedia.org/wiki/URL&quot;&gt;URLs&lt;/a&gt; for Newsbeuter to read. There are two ways we can do that.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We can update the ‘urls’ file&lt;/li&gt;
-  &lt;li&gt;We can import the &lt;a href=&quot;https://en.wikipedia.org/wiki/OPML&quot;&gt;OPML&lt;/a&gt; file. If you previously used another RSS reader we could try to export the data from that program into an OPML file. In that case you can import it into Newsbeuter using the -i option.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Lets assume we are starting from scratch and we are going to update the ‘urls’ file:&lt;/p&gt;
-
-&lt;p&gt;~/.newsbeuter/urls&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#news
-http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml &quot;~BBC News&quot; news, noisy
-
-#technology 
-https://news.ycombinator.com/rss &quot;~HN&quot; news, noisy
- 
-#DigitalOcean stuff 
-https://status.digitalocean.com/history.rss &quot;~DigitalOcean-status&quot; important
-https://status.heroku.com/feed &quot;~Heroku status&quot; important
-
-#random feeds 
-http://feeds.feedburner.com/OpenCulture &quot;~OpenCulture Blog&quot; blog
-http://joeroganexp.joerogan.libsynpro.com/rss &quot;~Joe Rogan Podcast&quot; podcast
-http://www.nba.com/raptors/rss.xml &quot;~Raptors Schedule&quot; blog noisy
-https://www.youtube.com/feeds/videos.xml?user=DigitalOceanVideos &quot;~DigitalOcean Videos - youtube&quot; blog
-
-#health
-http://nutritionfacts.org/feed &quot;~Nutrition Facts&quot; blog
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Copy the text above into the &lt;code class=&quot;highlighter-rouge&quot;&gt;~/newsbeuter/urls&lt;/code&gt; file. Once we have saved the file we can try to run newsbeuter again. Now we can see our feeds:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://2.bp.blogspot.com/-6tI0ammr0Xk/WgoZwLs6Q0I/AAAAAAAAAAo/W7733oOUPTQhEGObdcqGkFOC7pz3UsjxwCEwYBhgL/s1600/newsbeuter_after_initial_refresh.png&quot; alt=&quot;Newsbeuter initial screenshot&quot; title=&quot;Newsbeuter Initial Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Welcome to the main screen of Newsbeuter, the layout consists of three main sections.  A title bar, a list of content and at the bottom is a menu bar summarizing commands currently available.  In this case the content list contains the six feeds we added to the urls file. To get started just press &lt;kb&gt;R&lt;/kb&gt; to reload all feeds. This will go through each URL and fetch its content. In this case thousands of unread articles will appear so if you’re feeling overwhelmed just press &lt;kb&gt;C&lt;/kb&gt; to catch up and mark everything as read.  Typically you press &lt;kb&gt;R&lt;/kb&gt; to reload all your feeds to see if any new items have arrived. Press &lt;kb&gt;?&lt;/kb&gt; to get a full list of commands&lt;/p&gt;
-
-&lt;p&gt;Newsbeuter starts off in the Feeds List View and is structured as follows:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Feed List View
-    Article List
-        Article View
-            Open in Browser
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Press &lt;kb&gt;Enter&lt;/kb&gt; inside a feed opens the list of articles and pressing &lt;kb&gt;Enter&lt;/kb&gt; on article opens the article details etc. In all cases &lt;kb&gt;q&lt;/kb&gt; takes you back to the previous screen.&lt;/p&gt;
-
-&lt;h3 id=&quot;configure-newsbeuter-with-your-own-settings&quot;&gt;Configure Newsbeuter with your own settings&lt;/h3&gt;
-&lt;p&gt;Now we’re up and running. We can jump into Newsbeuter whenever we feel the need to get up to date information (or we may be looking to procrastinate by reading a celebrity gossip feed; which I’m sure you’re not interested in but just in case here is the URL: &lt;i&gt;http://www.tmz.com/category/hook-ups/rss.xml&lt;/i&gt;).&lt;/p&gt;
-
-&lt;p&gt;Simply start Newsbeuter and press &lt;kb&gt;R&lt;/kb&gt; repeatedly until a new item appears. If pressing &lt;kb&gt;R&lt;/kb&gt; is too much effort we can use the auto-reload feature to periodically refresh the news item for us.&lt;/p&gt;
-
-&lt;p&gt;The configuration settings such as auto-reload are well documented in the newsbeuter user manual, just reference the &lt;a href=&quot;https://www.newsbeuter.org/doc/newsbeuter.html#_first_steps&quot;&gt;First Steps&lt;/a&gt; section.&lt;/p&gt;
-
-&lt;p&gt;Here is an example of a working a configuration file.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.newsbeuter/config:&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# no automatic reloading
-refresh-on-startup no
-auto-reload no
-reload-time 360 # minutes
-
-# reloading
-reload-threads 4
-reload-only-visible-feeds no
-#show-read-feeds no
-download-retries 4
-
-# notification
-notify-screen yes
-notify-xterm yes
-
-# storage
-#max-items 200
-
-# external programs - ff is a firefox wrapper
-#browser elinks %u
-
-# display
-#article-sort-order date-desc
-#feedlist-format &quot;%S%n %11u %t&quot;
-#articlelist-format &quot;%D %f %?T?;%-17T; ?%t&quot;
-#datetime-format %m-%d
-#color background white black
-#color listnormal white black
-#color listfocus black white
-#color info black white
-#color article white black
-
-# interface
-confirm-exit yes
-bind-key k up
-bind-key j down
-bind-key O open-in-browser-and-mark-read
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;viewing-articles&quot;&gt;Viewing Articles&lt;/h3&gt;
-&lt;p&gt;To view an article, simply press &lt;kb&gt;Enter&lt;/kb&gt; to open the article, and then press &lt;kb&gt;o&lt;/kb&gt; to open it in the browser. Since most of the content is text based, we can use the default w3m text based browser to read it. However, if you’re on a desktop system with Chrome or Firefox available you can just as &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_first_steps&quot;&gt;easily configure Newsbeuter&lt;/a&gt; to open that.&lt;/p&gt;
-
-&lt;p&gt;Since the default browser is w3m here is a quick summary of the keys needed to navigate this browser:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Key&lt;/th&gt;
-      &lt;th&gt;Command Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kb&gt;q&lt;/kb&gt;&lt;/td&gt;
-      &lt;td&gt;quit&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kb&gt;space&lt;/kb&gt;&lt;/td&gt;
-      &lt;td&gt;page down&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kb&gt;b&lt;/kb&gt;&lt;/td&gt;
-      &lt;td&gt;page up&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;kb&gt;H&lt;/kb&gt;&lt;/td&gt;
-      &lt;td&gt;help screen&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;
-If you want to stick with using a text based browser consider using &lt;a href=&quot;http://elinks.or.cz/&quot;&gt;elinks&lt;/a&gt;. It does a good job of rendering modern web pages for basic readability and is also available on Ubuntu.&lt;/p&gt;
-
-&lt;h3 id=&quot;tags---categorize-your-feeds&quot;&gt;Tags - Categorize your Feeds&lt;/h3&gt;
-&lt;p&gt;Tags are useful for organizing your feeds. You will notice in the urls file above that we can put a list of space separated tags after the feed name. These tags can then be used to group feeds and articles.&lt;/p&gt;
-
-&lt;p&gt;For example, to view only items tagged with ‘important’, press &lt;kb&gt;t&lt;/kb&gt; and then select the ‘important’ the tag. Press &lt;kb&gt;Ctrl&lt;/kb&gt;+&lt;kb&gt;t&lt;/kb&gt; to clear the tag filter.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://3.bp.blogspot.com/-2WXHqISou58/Wgob2npq2BI/AAAAAAAAAA4/bhVyVcCAjh0-pOd1At4UpOTURFpyOhJEACEwYBhgL/s1600/newsbeuter_tag_importantonly.png&quot; alt=&quot;Newsbeuter tags screenshot&quot; title=&quot;Newsbeuter Tags Screen-shot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;filters---focus-on-what-is-important&quot;&gt;Filters - Focus on what is Important&lt;/h3&gt;
-&lt;p&gt;Filters can remove unwanted entries from your current view. There are two types of filters, feed filters and article filters.&lt;/p&gt;
-
-&lt;p&gt;For example: to filter out feeds that do not contain any unread items, we can press &lt;kb&gt;F&lt;/kb&gt;, then enter the following filter text, followed by &lt;kb&gt;Enter&lt;/kb&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unread_count &amp;gt; 0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Press &lt;kb&gt;Ctrl&lt;/kb&gt;+&lt;kb&gt;F&lt;/kb&gt; to clear the filter and view everything again.&lt;/p&gt;
-
-&lt;p&gt;Filters can be predefined in the configuration file by adding them to the config file, for example add:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.newsbueter/config&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;define-filter &quot;Articles containing 'linux'&quot; &quot;title =~ \&quot;linux\&quot;&quot;
-define-filter &quot;Feeds with unread messages&quot; &quot;unread_count &amp;gt; 0&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;For complete details on creating filter expressions see the &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_filter_language&quot;&gt;detailed documentation here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;simplifying-views-with-query-feeds-and-grouping&quot;&gt;Simplifying Views with Query Feeds and Grouping&lt;/h3&gt;
-&lt;p&gt;Query feeds are a powerful tool that make Newsbeuter stand out as a news reader. They give the user the ability to combine a set of distinct feeds into a single feed. Once your URL list starts to grow bigger you will see why this is very useful. Instead of checking all the entertainment related feeds separately to see what updates were received for today we can open a single feed called entertainment and see them all together in a single view. Lets work through a simple example to illustrate.&lt;/p&gt;
-
-&lt;p&gt;Add the following line to the top of the urls file and restart Newsbeuter.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.newsbeuter/urls:&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;query:Entertainment Stuff:tags # \&quot;blog\&quot; or tags # \&quot;podcast\&quot;&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The above statement creates a new feed called “Entertainment Stuff” which groups together everything with blog or podcast tags. You can see in the screen-shot below that when we open “Entertainment Stuff” all the applicable articles are grouped together in one list:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://4.bp.blogspot.com/-yNcFOXpm3n4/WgodkHe-DOI/AAAAAAAAABA/zGtt1jMOnLsyW9XZ9J4CCJXECy5GYqd-wCLcBGAs/s1600/newsbeuter_query_feed_example.png&quot; alt=&quot;Newsbeuter tags screenshot&quot; title=&quot;Newsbeuter Tags Screen-shot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can write and combine filter expression as needed, see the &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_filter_language&quot;&gt;filter language documentation page&lt;/a&gt; to learn more.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion-and-next-steps&quot;&gt;Conclusion and Next Steps&lt;/h3&gt;
-&lt;p&gt;We took a trip back in time to the age of text-based software and browsers. We learned about RSS and how to use Newsbeuter to start managing our own news feeds. There are still plenty of sites that use RSS and Atom.  Here are some ideas on what you can include in your feeds:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Blogs&lt;/li&gt;
-  &lt;li&gt;News aggregators i.e slashdot.org (just make sure to make filters for these noisy sources)&lt;/li&gt;
-  &lt;li&gt;Forum thread comment sections&lt;/li&gt;
-  &lt;li&gt;DigitalOcean status page&lt;/li&gt;
-  &lt;li&gt;YouTube channels (ok, so its hard to view youtube videos in w3m but you will be notified of new updates)&lt;/li&gt;
-  &lt;li&gt;News sites&lt;/li&gt;
-  &lt;li&gt;Websites like reddit, monster.com, craigslist etc etc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In addition, Newsbeuter has many advanced features to potentially further improve your workflow. For example, &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_macro_support&quot;&gt;Newsbeuter macros&lt;/a&gt; allow you to combine a sequence of frequently used commands into a single keystroke. Also you can extend Newsbeuter’s functionality using &lt;a href=&quot;https://newsbeuter.org/doc/newsbeuter.html#_scripts_and_filters_snownews_extensions&quot;&gt;scripts&lt;/a&gt; which can execute external commands and applications from inside Newsbeuter.  Hopefully this tutorial has given you some new ideas on how to manage your news feeds and added another tool to your time management toolbox.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction In this modern age we have unprecedented access to information through the internet. The amount of information is so large it can be overwhelming and with the advent of personalized profiles and machine learning algorithms we are increasingly trusting software suggestions to decide which content to consume. It often seems like YouTube and Facebook know exactly which video we want to watch. This can be a convenient and fun way to be exposed to new content and ideas. However, this can also lead to distracting ads and unwanted content. This article takes a trip back in time to when the web was a younger and more idealistic place; more like a sprawling outdoor market place than a series of carefully curated big box stores. In this market place the responsibility of navigating and choosing items falls entirely on the user. How does one keep track of which stalls have new items to see? How does one filter out unwanted items? This article describes one way to use Web Feeds and news reader software in order to organize your information and save you time.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">In JavaScript the JSON.stringify method provides a way of converting a JavaScript object to a string. This function also has a feature to add linebreaks and indentation as a quick way to make the string more readable which can help during troubleshooting.</summary></entry></feed>

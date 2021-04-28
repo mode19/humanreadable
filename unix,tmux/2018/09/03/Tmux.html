@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HumanReadable Blog</title>
-  <meta name="description" content="Computers, Linux, open-source, programming, technology and related articles">
+  <title>Tmux</title>
+  <meta name="description" content="Tmux">
 
   <link rel="stylesheet" href="/humanreadable/assets/main.css">
-  <link rel="canonical" href="https://mode19.github.io/humanreadable/">
+  <link rel="canonical" href="https://mode19.github.io/humanreadable/unix,tmux/2018/09/03/Tmux.html">
   <link rel="alternate" type="application/rss+xml" title="HumanReadable Blog" href="/humanreadable/feed.xml">
   
   
@@ -93,128 +93,53 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Tmux</h1>
+    <p class="post-meta">
+      <time datetime="2018-09-03T00:00:00-05:00" itemprop="datePublished">
+        
+        Sep 3, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="tmux">Tmux</h2>
+
+<p>Sample tmux rc:</p>
+
+<p>~/.tmux.conf</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># remap prefix to Control + a
+set -g prefix C-a
+# bind 'C-a C-a' to type 'C-a'
+bind C-a send-prefix
+unbind C-b
+
+set-window-option -g mode-keys vi
+set-option -g history-limit 10000
+
+is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
+    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
+
+#bind-key -n C-h if-shell "$is_vim" "send-keys C-h"  "select-pane -L"
+#bind-key -n C-j if-shell "$is_vim" "send-keys C-j"  "select-pane -D"
+#bind-key -n C-k if-shell "$is_vim" "send-keys C-k"  "select-pane -U"
+#bind-key -n C-l if-shell "$is_vim" "send-keys C-l"  "select-pane -R"
+#bind-key -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
+
+
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
+</code></pre></div></div>
+
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        
-        <span class="post-meta">Sep 3, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/unix,tmux/2018/09/03/Tmux.html">Tmux</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Sep 3, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/test-automation/2018/09/03/Test-Pyramid.html">Test Pyramid</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Sep 3, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/vim,/unix/2018/09/03/Docker-Commands.html">Some Docker Commands</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Aug 1, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/vim,/unix/2018/08/01/My-custom-vim-setup.html">My custom vim setup</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jul 1, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/cloud,/testing,/automated/2018/07/01/Testing-cloud-services.html">Testing Cloud Services - Book Notes</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jun 21, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/graphviz/2018/06/21/Test-Automation-Landscape.html">Aspects of a Test Automation Solution</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 2, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/awk,/unix/2018/03/02/Command-line-log-metrics.html">Command-line Log Metrics: cat, grep, sed, uniq, sort, wc and awk</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Mar 1, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/awk,/unix/2018/03/01/Quick-and-dirty-software-metrics-using-awk.html">Quick and Dirty Software Metrics using Awk</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 9, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/vim/2018/01/09/vim-global-commmand.html">VIM Quick Tip: The Global Command</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 9, 2018</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/javascript/2018/01/09/javascript-JSON-formatting.html">JavaScript Quick Tip: Stringifying an Object with Indentation</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Nov 14, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/rss,digitalocean/2017/11/14/manage-newsfeeds-with-newsbeuter-and-digitalocean.html">Manage your News Feeds with Newsbeuter and DigitalOcean</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Jan 1, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/humanreadable/admin/2017/01/01/welcome.html">Welcome to the Blog</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/humanreadable/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
